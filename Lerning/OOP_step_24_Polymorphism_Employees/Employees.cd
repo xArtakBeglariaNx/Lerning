@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OOP_step_24_Polymorphism_Employees.Employee">
+    <Position X="2" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="OOP_step_24_Polymorphism_Employees.Employee.BenefitPackage">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Enum Name="OOP_step_24_Polymorphism_Employees.Employee.BenefitPackage.BenefitPackageLevel">
+            <TypeIdentifier>
+              <NewMemberFileName>Employee.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Enum>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Employee.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAIAgAggAAAEAIAAQQEAEAAAAEQAAAgQAAAQA=</HashCode>
+      <FileName>Employee.Core.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOP_step_24_Polymorphism_Employees.Manager">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOP_step_24_Polymorphism_Employees.SalesPerson">
+    <Position X="7.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAQA=</HashCode>
+      <FileName>SalesPerson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOP_step_24_Polymorphism_Employees.PTSalesPerson">
+    <Position X="12.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PTSalesPerson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
