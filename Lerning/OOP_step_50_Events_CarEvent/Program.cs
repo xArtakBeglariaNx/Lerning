@@ -69,6 +69,20 @@ namespace OOP_step_50_Events_CarEvent
 
             Console.WriteLine("********************************");
 
+            #region Example with LambdaExpressions
+
+            Car myCar2 = new Car("Lambda", 120, 190);
+            myCar2.AboutToBlow += (sender, e) => { Console.WriteLine(e.msg); };
+            myCar2.Explored += (sender, e) => { Console.WriteLine(e.msg); };
+
+            Console.WriteLine("\n***** Speeding up *****");
+            for (int i = 0; i < 5; i++)
+            {
+                myCar2.Accelerate(20);
+            }
+
+            #endregion
+
             Console.ReadLine();
         }
 

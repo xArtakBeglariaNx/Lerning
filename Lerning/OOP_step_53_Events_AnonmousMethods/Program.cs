@@ -33,7 +33,7 @@ namespace OOP_step_53_Events_AnonmousMethods
                 }
             };
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 5; i++)
             {
                 c1.Accelerate(20);
             }

@@ -13,6 +13,7 @@ namespace OOP_step_54_LambdaExpression_SimpleLambdaExpression
             TraditionalDelegateSyntax();
             AnonimousDelegateSyntax();
             LambdaExpression();
+            LambdaExpressionSyntax();
             Console.ReadLine();
         }
 
@@ -30,7 +31,7 @@ namespace OOP_step_54_LambdaExpression_SimpleLambdaExpression
 
             foreach (int evenNumber in evenNumbers)
             {
-                Console.WriteLine($"Even numbers: {evenNumber}");
+                Console.Write($"{evenNumber}\t");
             }
             Console.WriteLine();
         }
@@ -46,7 +47,7 @@ namespace OOP_step_54_LambdaExpression_SimpleLambdaExpression
             Console.WriteLine("Here are your even numbers: ");
             foreach (int evenNumber in evenNumbers)
             {
-                Console.WriteLine($"Even numbers: {evenNumber}");
+                Console.Write($"{evenNumber}\t");
             }
             Console.WriteLine();
         }
@@ -62,12 +63,35 @@ namespace OOP_step_54_LambdaExpression_SimpleLambdaExpression
             Console.WriteLine("Here are your even numbers: ");
             foreach (int evenNumber in evenNumbers)
             {
-                Console.WriteLine($"Even numbers: {evenNumber}");
+                Console.Write($"{evenNumber}\t");
             }
             Console.WriteLine();
         }
         #endregion
 
+        #region Lambda version with plenty operators
+
+        static void LambdaExpressionSyntax()
+        {
+            List<int> list = new List<int>();
+            list.AddRange(new int[] { 20, 1, 4, 8, 9, 44 });
+
+            List<int> evenNumbers = list.FindAll((i) =>
+            {
+                Console.WriteLine($"value of i is currently {i}");
+                bool isEven = (i % 2) == 0;
+                return isEven;
+            });
+
+            Console.WriteLine("Here are your even numbers: ");
+            foreach (int evenNumber in evenNumbers)
+            {
+                Console.Write($"{evenNumber}\t");
+            }
+            Console.WriteLine();
+        }
+
+        #endregion
         private static bool IsEvenNumber(int i)
         {
             return (i % 2) == 0;

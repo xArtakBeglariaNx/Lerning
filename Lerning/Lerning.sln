@@ -111,6 +111,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_53_Events_Anonmous
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_54_LambdaExpression_SimpleLambdaExpression", "OOP_step_54_LambdaExpression_SimpleLambdaExpression\OOP_step_54_LambdaExpression_SimpleLambdaExpression.csproj", "{2B11EBA7-5341-4AC2-89BE-DA7B1EE0C256}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_55_LambdaExpression_LambdaExpressionsMultipleParams", "OOP_step_55_LambdaExpression_LambdaExpressionsMultipleParams\OOP_step_55_LambdaExpression_LambdaExpressionsMultipleParams.csproj", "{C0A8150A-5753-43BB-9138-94A4EA733FC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_56_ExpandingTools_SimpleIndexer", "OOP_step_56_ExpandingTools_SimpleIndexer\OOP_step_56_ExpandingTools_SimpleIndexer.csproj", "{FBC07895-C2BE-4EBB-A6A0-7C73D6717160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_57_ExpandingTools_OverloadedOps", "OOP_step_57_ExpandingTools_OverloadedOps\OOP_step_57_ExpandingTools_OverloadedOps.csproj", "{FABBEB85-7C92-4A4D-90FE-6D5F0398AD3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -333,6 +339,18 @@ Global
 		{2B11EBA7-5341-4AC2-89BE-DA7B1EE0C256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B11EBA7-5341-4AC2-89BE-DA7B1EE0C256}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B11EBA7-5341-4AC2-89BE-DA7B1EE0C256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A8150A-5753-43BB-9138-94A4EA733FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A8150A-5753-43BB-9138-94A4EA733FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A8150A-5753-43BB-9138-94A4EA733FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A8150A-5753-43BB-9138-94A4EA733FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC07895-C2BE-4EBB-A6A0-7C73D6717160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC07895-C2BE-4EBB-A6A0-7C73D6717160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC07895-C2BE-4EBB-A6A0-7C73D6717160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC07895-C2BE-4EBB-A6A0-7C73D6717160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABBEB85-7C92-4A4D-90FE-6D5F0398AD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABBEB85-7C92-4A4D-90FE-6D5F0398AD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABBEB85-7C92-4A4D-90FE-6D5F0398AD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABBEB85-7C92-4A4D-90FE-6D5F0398AD3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
