@@ -123,6 +123,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_59_ExtendingTools_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_60_ExtendingTools_InterfaceExtensions", "OOP_step_60_ExtendingTools_InterfaceExtensions\OOP_step_60_ExtendingTools_InterfaceExtensions.csproj", "{B3160698-675A-4B2D-8F29-D8400211D5FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_61_ExtendingTools_AnnonimousTypes", "OOP_step_61_ExtendingTools_AnnonimousTypes\OOP_step_61_ExtendingTools_AnnonimousTypes.csproj", "{24C9C645-7829-4EF9-AFF0-972BFB6D32CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -369,6 +371,10 @@ Global
 		{B3160698-675A-4B2D-8F29-D8400211D5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3160698-675A-4B2D-8F29-D8400211D5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3160698-675A-4B2D-8F29-D8400211D5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C9C645-7829-4EF9-AFF0-972BFB6D32CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C9C645-7829-4EF9-AFF0-972BFB6D32CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C9C645-7829-4EF9-AFF0-972BFB6D32CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C9C645-7829-4EF9-AFF0-972BFB6D32CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
