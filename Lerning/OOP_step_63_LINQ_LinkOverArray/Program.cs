@@ -15,6 +15,7 @@ namespace OOP_step_63_LINQ_LinkOverArray
             QuerryOverStrings();
             QuerryOverStringsWithExtensionMethods();
             QuerryOverStringsLongHand();
+            QuerryOverInts();
 
             Console.ReadLine();
         }
@@ -85,11 +86,48 @@ namespace OOP_step_63_LINQ_LinkOverArray
 
         #region ReflectOverQuerryResult
 
-        static void ReflectOverQuerryResult(object resultSet, string querryType= "Querry Expression")
+        static void ReflectOverQuerryResult(object resultSet, string querryType = "Querry Expression")
         {
+            Console.WriteLine();
             Console.WriteLine($"==== Info about querry using: {querryType} =====");
             Console.WriteLine($"resultSet of type: {resultSet.GetType().Name}");
             Console.WriteLine($"resultSet location: {resultSet.GetType().Assembly.GetName().Name}");
+        }
+        #endregion
+
+        #region QuerryOverInts
+
+        static void QuerryOverInts()
+        {
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
+
+            //IEnumerable<int> subset = from num in numbers where num < 5 select num;
+            //System.Collections.IEnumerable subset = from num in numbers where num < 5 select num;
+            var subset = from num in numbers where num < 5 select num;
+
+            ReflectOverQuerryResult(subset, "Querry Over Ints with variable types");
+
+            foreach (var item in subset)
+            {
+                Console.WriteLine($"{item} < 5");
+            }
+            Console.WriteLine();
+            numbers[0] = 4;
+            foreach (var item in subset)
+            {
+                Console.WriteLine($"{item} < 5");
+            }
+        }
+        #endregion
+
+        #region ImmediateExecution
+        static void ImmediateExecution()
+        {
+            int[] numbers = { 10, 20, 40, 1, 2, 3, 4 };
+
+            int[] subsetAsIntArray = (from i in numbers where i < 10 select i).ToArray<int>();
+
+            List<int> subsetAsListOfInts = (from j in numbers where j < 10 select j).ToList<int>();
         }
         #endregion
     }
