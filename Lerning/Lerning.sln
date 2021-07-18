@@ -127,6 +127,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_61_ExtendingTools_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_62_ExtendingTools_UnsafeCode", "OOP_step_62_ExtendingTools_UnsafeCode\OOP_step_62_ExtendingTools_UnsafeCode.csproj", "{6D01AC32-8A5A-479D-902A-EDD710EEE7C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_63_LINQ_LinkOverArray", "OOP_step_63_LINQ_LinkOverArray\OOP_step_63_LINQ_LinkOverArray.csproj", "{33BD008F-7BCD-4C00-A1D8-EA6D3130715B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -381,6 +383,10 @@ Global
 		{6D01AC32-8A5A-479D-902A-EDD710EEE7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D01AC32-8A5A-479D-902A-EDD710EEE7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D01AC32-8A5A-479D-902A-EDD710EEE7C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33BD008F-7BCD-4C00-A1D8-EA6D3130715B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BD008F-7BCD-4C00-A1D8-EA6D3130715B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BD008F-7BCD-4C00-A1D8-EA6D3130715B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BD008F-7BCD-4C00-A1D8-EA6D3130715B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
