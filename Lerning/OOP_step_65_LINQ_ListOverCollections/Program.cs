@@ -28,11 +28,18 @@ namespace OOP_step_65_LINQ_ListOverCollections
 
         static void GetFastCars(List<Car> myCars)
         {
-            var fastCars = from c in myCars where c.Speed > 90 && c.Make == "BMW" select c;
+            var fastCars1 = from c in myCars where c.Speed > 55 select c;
 
-            foreach (var item in fastCars)
+            foreach (var item in fastCars1)
             {
                 Console.WriteLine($"{item.PetName} is going to fast");
+            }
+
+            var fastCars2 = from c in myCars where c.Speed > 90 && c.Make == "BMW" select c;
+
+            foreach (var item in fastCars2)
+            {
+                Console.WriteLine($"{item.PetName} : {item.Make} is going to fast");
             }
         }
     }
