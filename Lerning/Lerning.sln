@@ -133,6 +133,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_64_LINQ_LinkRetVal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_65_LINQ_ListOverCollections", "OOP_step_65_LINQ_ListOverCollections\OOP_step_65_LINQ_ListOverCollections.csproj", "{410B209D-AFC6-402A-B732-DB675D395FDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_66_LINQ_FunWithLinqExpression", "OOP_step_66_LINQ_FunWithLinqExpression\OOP_step_66_LINQ_FunWithLinqExpression.csproj", "{2C70DE5A-C311-4A47-BF66-7448F74B0F33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -399,6 +401,10 @@ Global
 		{410B209D-AFC6-402A-B732-DB675D395FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{410B209D-AFC6-402A-B732-DB675D395FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{410B209D-AFC6-402A-B732-DB675D395FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C70DE5A-C311-4A47-BF66-7448F74B0F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C70DE5A-C311-4A47-BF66-7448F74B0F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C70DE5A-C311-4A47-BF66-7448F74B0F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C70DE5A-C311-4A47-BF66-7448F74B0F33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
