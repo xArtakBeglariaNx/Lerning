@@ -135,6 +135,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_65_LINQ_ListOverCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_66_LINQ_FunWithLinqExpression", "OOP_step_66_LINQ_FunWithLinqExpression\OOP_step_66_LINQ_FunWithLinqExpression.csproj", "{2C70DE5A-C311-4A47-BF66-7448F74B0F33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_67_LINQ_LinqQuerryWithOperators", "OOP_step_67_LINQ_LinqQuerryWithOperators\OOP_step_67_LINQ_LinqQuerryWithOperators.csproj", "{56322FF8-970A-4B42-B5E0-058104391747}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +407,10 @@ Global
 		{2C70DE5A-C311-4A47-BF66-7448F74B0F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C70DE5A-C311-4A47-BF66-7448F74B0F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C70DE5A-C311-4A47-BF66-7448F74B0F33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56322FF8-970A-4B42-B5E0-058104391747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56322FF8-970A-4B42-B5E0-058104391747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56322FF8-970A-4B42-B5E0-058104391747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56322FF8-970A-4B42-B5E0-058104391747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
