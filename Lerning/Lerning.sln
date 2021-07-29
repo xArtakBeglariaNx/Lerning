@@ -145,6 +145,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_70_ObjectsLifeTime
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_71_ObjectsLifeTime_FinalizableDisposableClass", "OOP_step_71_ObjectsLifeTime_FinalizableDisposableClass\OOP_step_71_ObjectsLifeTime_FinalizableDisposableClass.csproj", "{C6AA2A99-03AA-42D5-A069-E8AB991B6F72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_72_ObjectsLifeTime_LazyObjectInstantiation", "OOP_step_72_ObjectsLifeTime_LazyObjectInstantiation\OOP_step_72_ObjectsLifeTime_LazyObjectInstantiation.csproj", "{EE506279-EBCF-4D4E-B6FC-24B5423D31E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -435,6 +437,10 @@ Global
 		{C6AA2A99-03AA-42D5-A069-E8AB991B6F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6AA2A99-03AA-42D5-A069-E8AB991B6F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6AA2A99-03AA-42D5-A069-E8AB991B6F72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE506279-EBCF-4D4E-B6FC-24B5423D31E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE506279-EBCF-4D4E-B6FC-24B5423D31E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE506279-EBCF-4D4E-B6FC-24B5423D31E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE506279-EBCF-4D4E-B6FC-24B5423D31E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
