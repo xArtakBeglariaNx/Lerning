@@ -1,4 +1,6 @@
 ﻿Imports OOP_step_74_ClassLibrary_CarLibrary
+Imports System.Windows.Forms
+
 
 Module Module1
 
@@ -24,6 +26,7 @@ Module Module1
 
         Public Overrides Sub TurboBoost()
             Console.WriteLine("Zero to 60 in a cool 4.8 seconds")
+            MessageBox.Show("Zero to 60 in a cool 4.8 seconds")
         End Sub
     End Class
 
