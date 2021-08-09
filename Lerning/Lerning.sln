@@ -155,6 +155,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_75_ClassLibrary_CS
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OOP_step_76_ClassLibrary_VisualBasicCarClient", "OOP_step_76_ClassLibrary_VisualBasicCarClient\OOP_step_76_ClassLibrary_VisualBasicCarClient.vbproj", "{4DE17C6C-6DD2-420C-8FD1-C4AE5FE2BC3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_77_ClassLibrary_CodeBaseClient", "OOP_step_77_ClassLibrary_CodeBaseClient\OOP_step_77_ClassLibrary_CodeBaseClient.csproj", "{3F3080AE-8E7A-4F6D-84D9-43A78F09A255}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -465,6 +467,10 @@ Global
 		{4DE17C6C-6DD2-420C-8FD1-C4AE5FE2BC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DE17C6C-6DD2-420C-8FD1-C4AE5FE2BC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DE17C6C-6DD2-420C-8FD1-C4AE5FE2BC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3080AE-8E7A-4F6D-84D9-43A78F09A255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3080AE-8E7A-4F6D-84D9-43A78F09A255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3080AE-8E7A-4F6D-84D9-43A78F09A255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3080AE-8E7A-4F6D-84D9-43A78F09A255}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
