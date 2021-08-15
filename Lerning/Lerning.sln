@@ -165,6 +165,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_80_SystemReflectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_81_SystemReflection_SharedAsmReflector", "OOP_step_81_SystemReflection_SharedAsmReflector\OOP_step_81_SystemReflection_SharedAsmReflector.csproj", "{3B2CAF88-0176-4FE2-B76F-0212C625FEB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_82_SystemReflection_LateBindingApp", "OOP_step_82_SystemReflection_LateBindingApp\OOP_step_82_SystemReflection_LateBindingApp.csproj", "{2C03504F-5163-454D-B12C-BF636487F680}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -495,6 +497,10 @@ Global
 		{3B2CAF88-0176-4FE2-B76F-0212C625FEB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B2CAF88-0176-4FE2-B76F-0212C625FEB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B2CAF88-0176-4FE2-B76F-0212C625FEB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C03504F-5163-454D-B12C-BF636487F680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C03504F-5163-454D-B12C-BF636487F680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C03504F-5163-454D-B12C-BF636487F680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C03504F-5163-454D-B12C-BF636487F680}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
