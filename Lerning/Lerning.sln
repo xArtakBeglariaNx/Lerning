@@ -169,6 +169,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_82_SystemReflectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_83_SystemReflection_ApplyingAttributes", "OOP_step_83_SystemReflection_ApplyingAttributes\OOP_step_83_SystemReflection_ApplyingAttributes.csproj", "{FF9A1A8A-1C76-473D-98D5-F4384295AB7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_84_SystemReflection_AttributedCarLibrary", "OOP_step_84_SystemReflection_AttributedCarLibrary\OOP_step_84_SystemReflection_AttributedCarLibrary.csproj", "{0DB8ACAA-805B-4704-9C06-0FEBC863E1EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -507,6 +509,10 @@ Global
 		{FF9A1A8A-1C76-473D-98D5-F4384295AB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF9A1A8A-1C76-473D-98D5-F4384295AB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF9A1A8A-1C76-473D-98D5-F4384295AB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB8ACAA-805B-4704-9C06-0FEBC863E1EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB8ACAA-805B-4704-9C06-0FEBC863E1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB8ACAA-805B-4704-9C06-0FEBC863E1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB8ACAA-805B-4704-9C06-0FEBC863E1EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

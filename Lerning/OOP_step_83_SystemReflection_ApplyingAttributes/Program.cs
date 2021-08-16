@@ -10,7 +10,7 @@ namespace OOP_step_83_SystemReflection_ApplyingAttributes
     {
         static void Main(string[] args)
         {
-            HorseAndBuggy mule = new HorseAndBuggy();
+            //HorseAndBuggy mule = new HorseAndBuggy();
         }
     }
 }
