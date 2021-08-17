@@ -23,7 +23,7 @@ namespace OOP_step_84_SystemReflection_AttributedCarLibrary
     }
 
     
-    [VehicleDescription(Description = "A very long, slow, but feature - rich auto")]
+    [VehicleDescription("A very long, slow, but feature - rich auto")]
     public class Winnebago
     {
         
