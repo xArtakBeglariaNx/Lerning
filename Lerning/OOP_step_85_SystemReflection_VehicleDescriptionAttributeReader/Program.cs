@@ -24,7 +24,7 @@ namespace OOP_step_85_SystemReflection_VehicleDescriptionAttributeReader
             object[] customAtts = t.GetCustomAttributes(false);
             foreach (VehicleDescriptionAttribute v in customAtts)
             {
-                Console.WriteLine("-> \n", v.Description);
+                Console.WriteLine("-> {0} \n", v.Description);
             }
             Console.WriteLine();
         }
