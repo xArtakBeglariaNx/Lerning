@@ -22,10 +22,10 @@ namespace OOP_step_84_SystemReflection_AttributedCarLibrary
 
     }
 
-    [Serializable]
+    
     [VehicleDescription(Description = "A very long, slow, but feature - rich auto")]
     public class Winnebago
     {
-        public ulong notCompiliant; // this type is not CLS compiliant
+        
     }
 }
