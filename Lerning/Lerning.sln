@@ -181,6 +181,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_88_SystemReflectio
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OOP_step_89_SystemReflection_VbSnapIn", "OOP_step_89_SystemReflection_VbSnapIn\OOP_step_89_SystemReflection_VbSnapIn.vbproj", "{2A90CADB-9767-49CA-8EFD-8F3638CE249B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_90_SystemReflection_MyExtendableApp", "OOP_step_90_SystemReflection_MyExtendableApp\OOP_step_90_SystemReflection_MyExtendableApp.csproj", "{7A7A0D17-3BCF-4EC4-B157-0C75A4B2CC37}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A90CADB-9767-49CA-8EFD-8F3638CE249B} = {2A90CADB-9767-49CA-8EFD-8F3638CE249B}
+		{2A53B7FF-9BE9-4A4C-8195-CBDB80DEDD7F} = {2A53B7FF-9BE9-4A4C-8195-CBDB80DEDD7F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -543,6 +549,10 @@ Global
 		{2A90CADB-9767-49CA-8EFD-8F3638CE249B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A90CADB-9767-49CA-8EFD-8F3638CE249B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A90CADB-9767-49CA-8EFD-8F3638CE249B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7A0D17-3BCF-4EC4-B157-0C75A4B2CC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7A0D17-3BCF-4EC4-B157-0C75A4B2CC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7A0D17-3BCF-4EC4-B157-0C75A4B2CC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7A0D17-3BCF-4EC4-B157-0C75A4B2CC37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
