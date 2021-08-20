@@ -189,6 +189,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_90_SystemReflectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_91_DynamicTypes_DynamicKeyword", "OOP_step_91_DynamicTypes_DynamicKeyword\OOP_step_91_DynamicTypes_DynamicKeyword.csproj", "{37B6D2FC-BA10-417F-BFC3-83A4F2B0736D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_92_DynamicTypes_LateBindingWithDynamic", "OOP_step_92_DynamicTypes_LateBindingWithDynamic\OOP_step_92_DynamicTypes_LateBindingWithDynamic.csproj", "{8091D866-03E3-48F7-A962-ED2621F4A08B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_92_DynamicTypes_MathLibrary", "OOP_step_92_DynamicTypes_MathLibrary\OOP_step_92_DynamicTypes_MathLibrary.csproj", "{BCED811B-8D18-40A9-9BD4-022D4D4CE53E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -559,6 +563,14 @@ Global
 		{37B6D2FC-BA10-417F-BFC3-83A4F2B0736D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B6D2FC-BA10-417F-BFC3-83A4F2B0736D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B6D2FC-BA10-417F-BFC3-83A4F2B0736D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8091D866-03E3-48F7-A962-ED2621F4A08B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8091D866-03E3-48F7-A962-ED2621F4A08B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8091D866-03E3-48F7-A962-ED2621F4A08B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8091D866-03E3-48F7-A962-ED2621F4A08B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCED811B-8D18-40A9-9BD4-022D4D4CE53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCED811B-8D18-40A9-9BD4-022D4D4CE53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCED811B-8D18-40A9-9BD4-022D4D4CE53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCED811B-8D18-40A9-9BD4-022D4D4CE53E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
