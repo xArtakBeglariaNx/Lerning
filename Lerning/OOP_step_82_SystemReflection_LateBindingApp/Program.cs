@@ -53,5 +53,20 @@ namespace OOP_step_82_SystemReflection_LateBindingApp
             }
             Console.ReadLine();
         }
+
+        //static void CreateusingLateBindingWhisDynamic(Assembly asm)
+        //{
+        //    try
+        //    {
+        //        Type miniVan = asm.GetType("OOP_step_74_ClassLibrary_CarLibrary.MiniVan");
+        //        dynamic object objMiniV = Activator.CreateInstance(miniVan);
+        //        objMiniV.TurboBoost();
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    }
+        //}
     }
 }
