@@ -193,6 +193,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_92_DynamicTypes_La
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_92_DynamicTypes_MathLibrary", "OOP_step_92_DynamicTypes_MathLibrary\OOP_step_92_DynamicTypes_MathLibrary.csproj", "{BCED811B-8D18-40A9-9BD4-022D4D4CE53E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_93_DynamicTypes_ExportDataToOfficeApp", "OOP_step_93_DynamicTypes_ExportDataToOfficeApp\OOP_step_93_DynamicTypes_ExportDataToOfficeApp.csproj", "{F9BB203B-EB8F-4B15-860E-5C3DA45DB2C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -571,6 +573,10 @@ Global
 		{BCED811B-8D18-40A9-9BD4-022D4D4CE53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCED811B-8D18-40A9-9BD4-022D4D4CE53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCED811B-8D18-40A9-9BD4-022D4D4CE53E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9BB203B-EB8F-4B15-860E-5C3DA45DB2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9BB203B-EB8F-4B15-860E-5C3DA45DB2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9BB203B-EB8F-4B15-860E-5C3DA45DB2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9BB203B-EB8F-4B15-860E-5C3DA45DB2C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
