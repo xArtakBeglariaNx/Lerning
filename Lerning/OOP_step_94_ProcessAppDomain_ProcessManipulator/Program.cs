@@ -17,11 +17,11 @@ namespace OOP_step_94_ProcessAppDomain_ProcessManipulator
 
             Console.WriteLine("=== Enter PID of process to investigate ===");
             Console.Write("PID: ");
-            string pID = Console.ReadLine();
-            int theProcID = int.Parse(pID);
-            EnumThreadsForPid(theProcID);
-            EnumTheModulName(theProcID);
-            //StartAndKillProcces();
+            //string pID = Console.ReadLine();
+            //int theProcID = int.Parse(pID);
+            //EnumThreadsForPid(theProcID);
+            //EnumTheModulName(theProcID);
+            StartAndKillProcces();
 
             Console.ReadLine();
         }
@@ -117,7 +117,9 @@ namespace OOP_step_94_ProcessAppDomain_ProcessManipulator
             Process oProc = null;
             try
             {
-                oProc = Process.Start("opera.exe", "google.com");
+                ProcessStartInfo startInfo = new ProcessStartInfo("opera.exe", "google.com");
+                startInfo.WindowStyle = ProcessWindowStyle.Maximized;
+                oProc = Process.Start(startInfo);
             }
             catch (Exception ex)
             {
