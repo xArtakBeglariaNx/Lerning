@@ -199,6 +199,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_94_ProcessAppDomai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_95_ProcessAppDomain_DefaultAppDomainApp", "OOP_step_95_ProcessAppDomain_DefaultAppDomainApp\OOP_step_95_ProcessAppDomain_DefaultAppDomainApp.csproj", "{0F6BC35A-F5B1-4A28-9EC2-F151BD3A1C38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_96_ProcessAppDomain_CustomAppDomain", "OOP_step_96_ProcessAppDomain_CustomAppDomain\OOP_step_96_ProcessAppDomain_CustomAppDomain.csproj", "{0D2D5ADC-0C54-4E9B-8322-DFED9F55699C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -589,6 +591,10 @@ Global
 		{0F6BC35A-F5B1-4A28-9EC2-F151BD3A1C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F6BC35A-F5B1-4A28-9EC2-F151BD3A1C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F6BC35A-F5B1-4A28-9EC2-F151BD3A1C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2D5ADC-0C54-4E9B-8322-DFED9F55699C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2D5ADC-0C54-4E9B-8322-DFED9F55699C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2D5ADC-0C54-4E9B-8322-DFED9F55699C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2D5ADC-0C54-4E9B-8322-DFED9F55699C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
