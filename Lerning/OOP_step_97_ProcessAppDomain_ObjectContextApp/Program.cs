@@ -33,7 +33,7 @@ namespace OOP_step_97_ProcessAppDomain_ObjectContextApp
         public SportCar()
         {
             Context ctx = Thread.CurrentContext;
-            Console.WriteLine($"{this.ToString()} object in context {ctx.ContextID}");
+            Console.WriteLine($"{this} object in context {ctx.ContextID}");
             foreach (IContextProperty ctxProp in ctx.ContextProperties)
             {
                 Console.WriteLine($"->> Context Prop: {ctxProp.Name}");
@@ -49,7 +49,7 @@ namespace OOP_step_97_ProcessAppDomain_ObjectContextApp
         public SportCarTS()
         {
             Context ctx = Thread.CurrentContext;
-            Console.WriteLine($"{this.ToString()} object in context {ctx.ContextID}");
+            Console.WriteLine($"{this} object in context {ctx.ContextID}");
             foreach (IContextProperty ctxProp in ctx.ContextProperties)
             {
                 Console.WriteLine($"->> Ctx Prop: {ctxProp.Name}");
