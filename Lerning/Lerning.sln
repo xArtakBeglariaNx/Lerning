@@ -205,6 +205,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_97_ProcessAppDomai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_98_CIL_HelloProgram", "OOP_step_98_CIL_HelloProgram\OOP_step_98_CIL_HelloProgram.csproj", "{C90693EE-92F0-4199-8A70-525954A26455}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_99_CIL_MyAsmBuilder", "OOP_step_99_CIL_MyAsmBuilder\OOP_step_99_CIL_MyAsmBuilder.csproj", "{AF372E6F-0D96-4963-BFBC-A94FD322FDF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -607,6 +609,10 @@ Global
 		{C90693EE-92F0-4199-8A70-525954A26455}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C90693EE-92F0-4199-8A70-525954A26455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C90693EE-92F0-4199-8A70-525954A26455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF372E6F-0D96-4963-BFBC-A94FD322FDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF372E6F-0D96-4963-BFBC-A94FD322FDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF372E6F-0D96-4963-BFBC-A94FD322FDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF372E6F-0D96-4963-BFBC-A94FD322FDF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
