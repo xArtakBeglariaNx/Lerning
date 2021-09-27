@@ -207,6 +207,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_98_CIL_HelloProgra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_99_CIL_MyAsmBuilder", "OOP_step_99_CIL_MyAsmBuilder\OOP_step_99_CIL_MyAsmBuilder.csproj", "{AF372E6F-0D96-4963-BFBC-A94FD322FDF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_100_ASync_SyncDelegateReview", "OOP_step_100_ASync_SyncDelegateReview\OOP_step_100_ASync_SyncDelegateReview.csproj", "{CEA0F56A-1DBC-4D16-8DEE-38480CF59A8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -613,6 +615,10 @@ Global
 		{AF372E6F-0D96-4963-BFBC-A94FD322FDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF372E6F-0D96-4963-BFBC-A94FD322FDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF372E6F-0D96-4963-BFBC-A94FD322FDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA0F56A-1DBC-4D16-8DEE-38480CF59A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA0F56A-1DBC-4D16-8DEE-38480CF59A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA0F56A-1DBC-4D16-8DEE-38480CF59A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA0F56A-1DBC-4D16-8DEE-38480CF59A8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
