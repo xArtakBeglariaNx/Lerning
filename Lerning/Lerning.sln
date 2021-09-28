@@ -211,6 +211,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_100_ASync_SyncDele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_101_ASync_AsyncDelegate", "OOP_step_101_ASync_AsyncDelegate\OOP_step_101_ASync_AsyncDelegate.csproj", "{DB4B3A28-A9D7-4603-818F-189E9CC42F97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_102_ASync_AsyncCallBackDelegate", "OOP_step_102_ASync_AsyncCallBackDelegate\OOP_step_102_ASync_AsyncCallBackDelegate.csproj", "{A8878607-1799-42CA-BC4B-696A97EA707B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -625,6 +627,10 @@ Global
 		{DB4B3A28-A9D7-4603-818F-189E9CC42F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB4B3A28-A9D7-4603-818F-189E9CC42F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB4B3A28-A9D7-4603-818F-189E9CC42F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8878607-1799-42CA-BC4B-696A97EA707B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8878607-1799-42CA-BC4B-696A97EA707B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8878607-1799-42CA-BC4B-696A97EA707B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8878607-1799-42CA-BC4B-696A97EA707B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
