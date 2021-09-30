@@ -215,6 +215,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_102_ASync_AsyncCal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_103_ASync_ThreadStats", "OOP_step_103_ASync_ThreadStats\OOP_step_103_ASync_ThreadStats.csproj", "{973F6F07-F6B9-424C-AA53-C7197131F959}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_104_ASync_SimpleMultiThreadApp", "OOP_step_104_ASync_SimpleMultiThreadApp\OOP_step_104_ASync_SimpleMultiThreadApp.csproj", "{554CF27C-C6E4-4550-BCA0-7475E9AB296D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -637,6 +639,10 @@ Global
 		{973F6F07-F6B9-424C-AA53-C7197131F959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{973F6F07-F6B9-424C-AA53-C7197131F959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{973F6F07-F6B9-424C-AA53-C7197131F959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{554CF27C-C6E4-4550-BCA0-7475E9AB296D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{554CF27C-C6E4-4550-BCA0-7475E9AB296D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{554CF27C-C6E4-4550-BCA0-7475E9AB296D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{554CF27C-C6E4-4550-BCA0-7475E9AB296D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
