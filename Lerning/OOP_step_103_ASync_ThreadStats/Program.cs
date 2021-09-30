@@ -19,6 +19,7 @@ namespace OOP_step_103_ASync_ThreadStats
 
             //show details in servicing domain of app and context
             Console.WriteLine($"Name of current AppDomain: {Thread.GetDomain().FriendlyName}");
+            Console.WriteLine($"ID of curr AppDomain: {Thread.GetDomainID()}");
             Console.WriteLine($"ID of current context: {Thread.CurrentContext.ContextID}\n");
 
             //show another stats of curr thread
