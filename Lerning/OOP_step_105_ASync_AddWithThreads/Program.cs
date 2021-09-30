@@ -19,6 +19,7 @@ namespace OOP_step_105_ASync_AddWithThreads
 
     class Program
     {
+        private static AutoResetEvent waitHandle = new AutoResetEvent(false);
         static void Main(string[] args)
         {
             Console.WriteLine("==== Adding with Threads ofbjects ====");
@@ -31,7 +32,8 @@ namespace OOP_step_105_ASync_AddWithThreads
             t.Start(ap);
 
             //waiting before thread is finished
-            Thread.Sleep(5);
+            waitHandle.WaitOne();
+            Console.WriteLine("Other thread is done!");
 
             Console.ReadLine();
         }
@@ -44,6 +46,9 @@ namespace OOP_step_105_ASync_AddWithThreads
 
                 AddParams ap = (AddParams)data;
                 Console.WriteLine($"{ap.a} + {ap.b} is {ap.a + ap.b}");
+
+                //notify another thread that the work is completed
+                waitHandle.Set();
             }
         }
     }
