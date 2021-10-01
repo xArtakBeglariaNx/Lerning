@@ -16,7 +16,7 @@ namespace OOP_step_108_ASync_TimerApp
 
             //Create delegate
             TimerCallback timerCB = new TimerCallback(PrintTime);
-            Timer timer = new Timer(timerCB, "Hello from Main", 0, 1000);
+            var _ = new Timer(timerCB, "Hello from Main", 0, 1000);
             Console.ReadLine();
         }
 
