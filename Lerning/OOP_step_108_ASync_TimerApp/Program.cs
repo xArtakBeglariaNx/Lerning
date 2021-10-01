@@ -13,17 +13,16 @@ namespace OOP_step_108_ASync_TimerApp
         static void Main(string[] args)
         {
             Console.WriteLine("==== Working with Timer type ====");
-            Console.WriteLine("Time is: ");
 
             //Create delegate
             TimerCallback timerCB = new TimerCallback(PrintTime);
-            Timer timer = new Timer(timerCB, null, 0, 1000);
+            Timer timer = new Timer(timerCB, "Hello from Main", 0, 1000);
             Console.ReadLine();
         }
 
         static void PrintTime(object state)
         {
-            Console.WriteLine($"==== {DateTime.Now.ToLongTimeString()} ====");
+            Console.WriteLine($"==== Time is: {DateTime.Now.ToLongTimeString()}, Params: {state} ====");
         }
     }
 }
