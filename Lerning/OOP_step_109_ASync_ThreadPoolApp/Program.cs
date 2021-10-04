@@ -15,7 +15,7 @@ namespace OOP_step_109_ASync_ThreadPoolApp
         {
             lock (threadLock)
             {
-                Console.WriteLine($"-> {Thread.CurrentThread.Name} is executing PrintNumbers()");
+                Console.WriteLine($"-> {Thread.CurrentThread.Name} is executing PrintTheNumbers()");
 
                 //show numbers
                 Console.Write("Your numbers:");
