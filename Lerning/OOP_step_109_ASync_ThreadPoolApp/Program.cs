@@ -21,11 +21,10 @@ namespace OOP_step_109_ASync_ThreadPoolApp
                 Console.Write("Your numbers:");
                 for (int i = 0; i < 10; i++)
                 {
-                    Random r = new Random();
-                    Thread.Sleep(1000 * r.Next(0));
+                    
+                    Thread.Sleep(125);
                     Console.Write(i + 1);
                 }
-
                 Console.WriteLine();
             }
         }
