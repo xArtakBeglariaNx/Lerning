@@ -229,6 +229,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_109_ASync_ThreadPo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_110_ASync_DataparallelismWithForEach", "OOP_step_110_ASync_DataparallelismWithForEach\OOP_step_110_ASync_DataparallelismWithForEach.csproj", "{F8DFCA26-3AC7-4D84-B1C7-0E5208253ECB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_111_ASync_MyEBookReader", "OOP_step_111_ASync_MyEBookReader\OOP_step_111_ASync_MyEBookReader.csproj", "{5BB18517-C029-47DD-ABB9-D259F2F27E63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -679,6 +681,10 @@ Global
 		{F8DFCA26-3AC7-4D84-B1C7-0E5208253ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8DFCA26-3AC7-4D84-B1C7-0E5208253ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8DFCA26-3AC7-4D84-B1C7-0E5208253ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB18517-C029-47DD-ABB9-D259F2F27E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB18517-C029-47DD-ABB9-D259F2F27E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB18517-C029-47DD-ABB9-D259F2F27E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB18517-C029-47DD-ABB9-D259F2F27E63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
