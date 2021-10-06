@@ -233,6 +233,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_111_ASync_MyEBookR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_112_ASync_PLINQDataProcessingWithCancelation", "OOP_step_112_ASync_PLINQDataProcessingWithCancelation\OOP_step_112_ASync_PLINQDataProcessingWithCancelation.csproj", "{A59F1609-8F42-40D2-ADCF-E9520F7E154D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_113_ASync_FunWithCSharpAsync", "OOP_step_113_ASync_FunWithCSharpAsync\OOP_step_113_ASync_FunWithCSharpAsync.csproj", "{3A4DD120-42AC-433B-8735-1429A4BBCB4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -691,6 +693,10 @@ Global
 		{A59F1609-8F42-40D2-ADCF-E9520F7E154D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A59F1609-8F42-40D2-ADCF-E9520F7E154D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A59F1609-8F42-40D2-ADCF-E9520F7E154D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A4DD120-42AC-433B-8735-1429A4BBCB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A4DD120-42AC-433B-8735-1429A4BBCB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A4DD120-42AC-433B-8735-1429A4BBCB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A4DD120-42AC-433B-8735-1429A4BBCB4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
