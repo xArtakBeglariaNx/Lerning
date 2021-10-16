@@ -12,7 +12,7 @@ namespace OOP_step_113_ASync_FunWithCSharpAsync
         static async Task Main(string[] args)
         {
             Console.WriteLine("Fun With Async");
-            List<int> l = default;
+            //List<int> l = default;
             //Console.WriteLine(DoWork());            
             string message = await DoWorkAsync();
             Console.WriteLine(message);
@@ -73,6 +73,7 @@ namespace OOP_step_113_ASync_FunWithCSharpAsync
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 await LogTheErrors();
                 throw;
             }
@@ -111,7 +112,7 @@ namespace OOP_step_113_ASync_FunWithCSharpAsync
                 Console.WriteLine("Bad data");
                 return;
             }
-            actualImplementation();
+            await actualImplementation();
             async Task actualImplementation()
             {
                 await Task.Run(() =>
@@ -122,6 +123,12 @@ namespace OOP_step_113_ASync_FunWithCSharpAsync
                     Console.WriteLine("Somthing bad happend");
                 });
             }
+        }
+
+        static async ValueTask<int> ReturnAnInt()
+        {
+            await Task.Delay(1_000);
+            return 5;
         }
     }
 }
