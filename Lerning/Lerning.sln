@@ -235,6 +235,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_112_ASync_PLINQDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_113_ASync_FunWithCSharpAsync", "OOP_step_113_ASync_FunWithCSharpAsync\OOP_step_113_ASync_FunWithCSharpAsync.csproj", "{3A4DD120-42AC-433B-8735-1429A4BBCB4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_114_SysIO_DirectoryApp", "OOP_step_114_SysIO_DirectoryApp\OOP_step_114_SysIO_DirectoryApp.csproj", "{31B39577-E998-4A8D-BC42-4FB518E0396A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_115_SysIO_DriveInfoApp", "OOP_step_115_SysIO_DriveInfoApp\OOP_step_115_SysIO_DriveInfoApp.csproj", "{C7B0C72F-F145-4FDD-BA51-956CC823B861}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -697,6 +701,14 @@ Global
 		{3A4DD120-42AC-433B-8735-1429A4BBCB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A4DD120-42AC-433B-8735-1429A4BBCB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A4DD120-42AC-433B-8735-1429A4BBCB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B39577-E998-4A8D-BC42-4FB518E0396A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B39577-E998-4A8D-BC42-4FB518E0396A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B39577-E998-4A8D-BC42-4FB518E0396A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B39577-E998-4A8D-BC42-4FB518E0396A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B0C72F-F145-4FDD-BA51-956CC823B861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B0C72F-F145-4FDD-BA51-956CC823B861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B0C72F-F145-4FDD-BA51-956CC823B861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B0C72F-F145-4FDD-BA51-956CC823B861}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
