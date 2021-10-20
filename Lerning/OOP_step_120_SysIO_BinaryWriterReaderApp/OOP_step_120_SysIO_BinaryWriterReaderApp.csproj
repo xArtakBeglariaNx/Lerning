@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C84D4BB-6925-4FDC-9E23-9BC45F4F8824}</ProjectGuid>
+    <ProjectGuid>{5B690329-ECB9-4116-9289-3F6B67FF520D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOP_step_118_SysIO_StringWriterReaderApp</RootNamespace>
-    <AssemblyName>OOP_step_118_SysIO_StringWriterReaderApp</AssemblyName>
+    <RootNamespace>OOP_step_120_SysIO_BinaryWriterReaderApp</RootNamespace>
+    <AssemblyName>OOP_step_120_SysIO_BinaryWriterReaderApp</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

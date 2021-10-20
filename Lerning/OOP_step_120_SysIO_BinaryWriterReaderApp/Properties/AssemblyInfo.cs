@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OOP_step_118_SysIO_StringWriterReaderApp")]
+[assembly: AssemblyTitle("OOP_step_120_SysIO_BinaryWriterReaderApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OOP_step_118_SysIO_StringWriterReaderApp")]
+[assembly: AssemblyProduct("OOP_step_120_SysIO_BinaryWriterReaderApp")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8c84d4bb-6925-4fdc-9e23-9bc45f4f8824")]
+[assembly: Guid("5b690329-ecb9-4116-9289-3f6b67ff520d")]
 
 // Version information for an assembly consists of the following four values:
 //

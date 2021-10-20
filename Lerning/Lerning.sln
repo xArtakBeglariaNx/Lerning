@@ -247,6 +247,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_118_SysIO_StreamWr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_119_SysIO_StringWriterReaderApp", "OOP_step_119_SysIO_StringWriterReaderApp\OOP_step_119_SysIO_StringWriterReaderApp.csproj", "{D143DAAF-60FC-4E76-849D-A1548D52881D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_120_SysIO_BinaryWriterReaderApp", "OOP_step_120_SysIO_BinaryWriterReaderApp\OOP_step_120_SysIO_BinaryWriterReaderApp.csproj", "{5B690329-ECB9-4116-9289-3F6B67FF520D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -733,6 +735,10 @@ Global
 		{D143DAAF-60FC-4E76-849D-A1548D52881D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D143DAAF-60FC-4E76-849D-A1548D52881D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D143DAAF-60FC-4E76-849D-A1548D52881D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B690329-ECB9-4116-9289-3F6B67FF520D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B690329-ECB9-4116-9289-3F6B67FF520D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B690329-ECB9-4116-9289-3F6B67FF520D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B690329-ECB9-4116-9289-3F6B67FF520D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
