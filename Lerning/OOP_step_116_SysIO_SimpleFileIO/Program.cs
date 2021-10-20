@@ -17,7 +17,7 @@ namespace OOP_step_116_SysIO_SimpleFileIO
 
             File.WriteAllLines(@"C:\Users\artge\source\repos\GitReps\Lerning\OOP_step_116_SysIO_SimpleFileIO\tasks.txt", myTasks);
 
-            foreach (string tasks in File.ReadLines (@"C:\Users\artge\source\repos\GitReps\Lerning\OOP_step_116_SysIO_SimpleFileIO\tasks.txt") )
+            foreach (string tasks in File.ReadAllLines (@"C:\Users\artge\source\repos\GitReps\Lerning\OOP_step_116_SysIO_SimpleFileIO\tasks.txt") )
             {
                 Console.WriteLine($"TODO: {tasks}");
             }
