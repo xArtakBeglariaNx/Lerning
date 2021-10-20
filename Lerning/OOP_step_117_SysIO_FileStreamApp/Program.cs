@@ -26,7 +26,7 @@ namespace OOP_step_117_SysIO_FileStreamApp
                 //Reset the internal("внутренняя") position of the stream
                 fStream.Position = 0;
 
-                //reed byte[] from file and show on console
+                //read byte[] from file and show on console
                 Console.Write("Your message as an array of bytes: ");
                 byte[] bytesFromFile = new byte[msgAsByteArray.Length];
 
