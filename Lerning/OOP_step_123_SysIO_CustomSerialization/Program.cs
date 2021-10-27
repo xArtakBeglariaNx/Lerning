@@ -16,7 +16,6 @@ namespace OOP_step_123_SysIO_CustomSerialization
             Console.WriteLine("=== Fun with Custom Serialization ===\n");
 
             StringData myData = new StringData();
-
             SoapFormatter soapFormat = new SoapFormatter();
             using (Stream fStream = new FileStream("MyData.soap", FileMode.Create, FileAccess.Write, FileShare.None))
             {
@@ -60,8 +59,6 @@ namespace OOP_step_123_SysIO_CustomSerialization
     {
         private string dataItemOne = "Fist data block";
         private string dataItemTwo = "More data";
-
-        public MoreData() { }
 
         [OnSerializing]
         private void OnSerializing(StreamingContext ctx)
