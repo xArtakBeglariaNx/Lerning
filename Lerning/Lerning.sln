@@ -243,13 +243,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_116_SysIO_SimpleFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_117_SysIO_FileStreamApp", "OOP_step_117_SysIO_FileStreamApp\OOP_step_117_SysIO_FileStreamApp.csproj", "{B2D05A42-40C4-42D3-9D7C-18B5FA0D33B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_118_SysIO_StreamWriterReaderApp", "OOP_step_118_SysIO_StramWriterReaderApp\OOP_step_118_SysIO_StreamWriterReaderApp.csproj", "{82576A32-14C8-4709-BDC3-E44BBFF228BA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_119_SysIO_StringWriterReaderApp", "OOP_step_119_SysIO_StringWriterReaderApp\OOP_step_119_SysIO_StringWriterReaderApp.csproj", "{D143DAAF-60FC-4E76-849D-A1548D52881D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_120_SysIO_BinaryWriterReaderApp", "OOP_step_120_SysIO_BinaryWriterReaderApp\OOP_step_120_SysIO_BinaryWriterReaderApp.csproj", "{5B690329-ECB9-4116-9289-3F6B67FF520D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_121_SysIO_MyDiractoryWatcher", "OOP_step_121_SysIO_MyDiractoryWatcher\OOP_step_121_SysIO_MyDiractoryWatcher.csproj", "{6B920FD5-D0F1-4228-9239-6C25415A7383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_122_SysIO_SimpleSerialize", "OOP_step_122_SysIO_SimpleSerialize\OOP_step_122_SysIO_SimpleSerialize.csproj", "{B537C79C-0A75-4908-AFAE-404ACB857A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_118_SysIO_StreamWriterReaderApp", "OOP_step_118_SysIO_StreamWriterReaderApp\OOP_step_118_SysIO_StreamWriterReaderApp.csproj", "{82576A32-14C8-4709-BDC3-E44BBFF228BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -729,10 +731,6 @@ Global
 		{B2D05A42-40C4-42D3-9D7C-18B5FA0D33B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2D05A42-40C4-42D3-9D7C-18B5FA0D33B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2D05A42-40C4-42D3-9D7C-18B5FA0D33B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{82576A32-14C8-4709-BDC3-E44BBFF228BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82576A32-14C8-4709-BDC3-E44BBFF228BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82576A32-14C8-4709-BDC3-E44BBFF228BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82576A32-14C8-4709-BDC3-E44BBFF228BA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D143DAAF-60FC-4E76-849D-A1548D52881D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D143DAAF-60FC-4E76-849D-A1548D52881D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D143DAAF-60FC-4E76-849D-A1548D52881D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -745,6 +743,14 @@ Global
 		{6B920FD5-D0F1-4228-9239-6C25415A7383}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B920FD5-D0F1-4228-9239-6C25415A7383}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B920FD5-D0F1-4228-9239-6C25415A7383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B537C79C-0A75-4908-AFAE-404ACB857A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B537C79C-0A75-4908-AFAE-404ACB857A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B537C79C-0A75-4908-AFAE-404ACB857A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B537C79C-0A75-4908-AFAE-404ACB857A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82576A32-14C8-4709-BDC3-E44BBFF228BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82576A32-14C8-4709-BDC3-E44BBFF228BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82576A32-14C8-4709-BDC3-E44BBFF228BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82576A32-14C8-4709-BDC3-E44BBFF228BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
