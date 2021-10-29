@@ -255,6 +255,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_118_SysIO_StreamWr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_123_SysIO_CustomSerialization", "OOP_step_123_SysIO_CustomSerialization\OOP_step_123_SysIO_CustomSerialization.csproj", "{0F902915-E069-4C05-ABC0-E6F0AAFBC5E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_124_ADO.NET_MyConnectionFactory", "OOP_step_124_ADO.NET_MyConnectionFactory\OOP_step_124_ADO.NET_MyConnectionFactory.csproj", "{5DF7AA7F-0258-4DAA-8EB2-9E75521378BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -757,6 +759,10 @@ Global
 		{0F902915-E069-4C05-ABC0-E6F0AAFBC5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F902915-E069-4C05-ABC0-E6F0AAFBC5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F902915-E069-4C05-ABC0-E6F0AAFBC5E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DF7AA7F-0258-4DAA-8EB2-9E75521378BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DF7AA7F-0258-4DAA-8EB2-9E75521378BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DF7AA7F-0258-4DAA-8EB2-9E75521378BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DF7AA7F-0258-4DAA-8EB2-9E75521378BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
