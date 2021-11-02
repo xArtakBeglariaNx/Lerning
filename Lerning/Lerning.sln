@@ -259,6 +259,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_124_ADO.NET_MyConn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_125_ADO.NET_DataProviderFactory", "OOP_step_125_ADO.NET_DataProviderFactory\OOP_step_125_ADO.NET_DataProviderFactory.csproj", "{13BC9420-0392-406E-8834-9562C1A9ADC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_126_ADO.NET_AutoLotDataReader", "OOP_step_126_ADO.NET_AutoLotDataReader\OOP_step_126_ADO.NET_AutoLotDataReader.csproj", "{08BABE43-36F4-4CF6-8C98-93198911F8E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -769,6 +771,10 @@ Global
 		{13BC9420-0392-406E-8834-9562C1A9ADC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13BC9420-0392-406E-8834-9562C1A9ADC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13BC9420-0392-406E-8834-9562C1A9ADC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08BABE43-36F4-4CF6-8C98-93198911F8E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08BABE43-36F4-4CF6-8C98-93198911F8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08BABE43-36F4-4CF6-8C98-93198911F8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08BABE43-36F4-4CF6-8C98-93198911F8E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
