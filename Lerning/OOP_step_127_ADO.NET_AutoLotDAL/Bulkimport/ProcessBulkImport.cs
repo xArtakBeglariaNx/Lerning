@@ -46,6 +46,7 @@ namespace OOP_step_127_ADO.NET_AutoLotDAL.Bulkimport
                 catch (Exception ex)
                 {
                     //Should do something here
+                    Console.WriteLine(ex.Message);
                 }
                 finally
                 {
