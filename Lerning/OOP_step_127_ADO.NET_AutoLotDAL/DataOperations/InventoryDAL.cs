@@ -41,7 +41,7 @@ namespace OOP_step_127_ADO.NET_AutoLotDAL.DataOperations
             List<Car> inventory = new List<Car>();
 
             //prepare the command object
-            string sql = "Select From * Inventory";
+            string sql = "Select * From Inventory";
             using (SqlCommand command = new SqlCommand(sql, _sqlConnection))
             {
                 command.CommandType = CommandType.Text;
@@ -65,7 +65,7 @@ namespace OOP_step_127_ADO.NET_AutoLotDAL.DataOperations
         {
             OpenConnection();
             Car car = null;
-            string sql = $"Select From * Inventory where CarId = {id}";
+            string sql = $"Select * From Inventory where CarId = {id}";
             using (SqlCommand command = new SqlCommand(sql, _sqlConnection))
             {
                 command.CommandType = CommandType.Text;
@@ -185,7 +185,7 @@ namespace OOP_step_127_ADO.NET_AutoLotDAL.DataOperations
             OpenConnection();
             string carPetName;
 
-            using (SqlCommand command = new SqlCommand("GetPetName", _sqlConnection))
+            using (SqlCommand command = new SqlCommand("GetPentName", _sqlConnection))
             {
                 command.CommandType = CommandType.StoredProcedure;
 
@@ -217,6 +217,69 @@ namespace OOP_step_127_ADO.NET_AutoLotDAL.DataOperations
                 CloseConnection();
             }
             return carPetName;
+        }
+
+        public void ProcessCreditRisks(bool throwEx, int custId)
+        {
+            OpenConnection();
+            string fName;
+            string lName;
+            var cmdSelect = new SqlCommand($"Select * from Customers where CustId = {custId}", _sqlConnection);
+            using (var dataReader = cmdSelect.ExecuteReader())
+            {
+                if (dataReader.HasRows)
+                {
+                    dataReader.Read();
+                    fName = (string)dataReader["FirstName"];
+                    lName = (string)dataReader["LastName"];
+                    dataReader.Close();
+                }
+                else
+                {
+                    CloseConnection();
+                    return;
+                }
+
+                // Create command objects that represent each step of the operation.
+                var cmdRemove = new SqlCommand($"Delete from Customers where CustId = {custId}",_sqlConnection);
+
+                var cmdInsert = new SqlCommand($"Insert Into CreditRisks" + $"(FirstName, LastName) Values ('{fName}', '{lName}')", _sqlConnection);
+
+
+                // We will get this from the connection object.
+                SqlTransaction tx = null;
+                try
+                {
+                    // Enlist the commands into this transaction.
+                    tx = _sqlConnection.BeginTransaction();
+                    cmdInsert.Transaction = tx;
+                    cmdRemove.Transaction = tx;
+
+                    // Execute the commands.
+                    cmdInsert.ExecuteNonQuery();
+                    cmdRemove.ExecuteNonQuery();
+
+                    // Simulate error.
+                    if (throwEx)
+                    {
+                        throw new Exception("Sorry! Database error! Transaction failed...");
+                    }
+                    else
+                    {
+                        // Commit it!
+                        tx.Commit();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    tx?.Rollback();
+                }
+                finally
+                {
+                    CloseConnection();
+                }
+            }
         }
     }
 }

@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DD4CD12F-1E84-4822-AB0D-DA91B117F0A6}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OOP_step_127_ADO.NET_AutoLotDAL</RootNamespace>
-    <AssemblyName>OOP_step_127_ADO.NET_AutoLotDAL</AssemblyName>
+    <ProjectGuid>{FC7A7DBC-7CD9-40D5-ACA0-4B3369D237C3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OOP_step_127_ADO.NET_AutoLotClient</RootNamespace>
+    <AssemblyName>OOP_step_127_ADO.NET_AutoLotClient</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,13 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bulkimport\IMyDataReader.cs" />
-    <Compile Include="Bulkimport\MyDataReader.cs" />
-    <Compile Include="Bulkimport\ProcessBulkImport.cs" />
-    <Compile Include="DataOperations\InventoryDAL.cs" />
-    <Compile Include="Models\Car.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OOP_step_127_ADO.NET_AutoLotDAL\OOP_step_127_ADO.NET_AutoLotDAL.csproj">
+      <Project>{dd4cd12f-1e84-4822-ab0d-da91b117f0a6}</Project>
+      <Name>OOP_step_127_ADO.NET_AutoLotDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

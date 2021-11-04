@@ -263,6 +263,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_126_ADO.NET_AutoLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_127_ADO.NET_AutoLotDAL", "OOP_step_127_ADO.NET_AutoLotDAL\OOP_step_127_ADO.NET_AutoLotDAL.csproj", "{DD4CD12F-1E84-4822-AB0D-DA91B117F0A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_127_ADO.NET_AutoLotClient", "OOP_step_127_ADO.NET_AutoLotClient\OOP_step_127_ADO.NET_AutoLotClient.csproj", "{FC7A7DBC-7CD9-40D5-ACA0-4B3369D237C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -781,6 +783,10 @@ Global
 		{DD4CD12F-1E84-4822-AB0D-DA91B117F0A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD4CD12F-1E84-4822-AB0D-DA91B117F0A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD4CD12F-1E84-4822-AB0D-DA91B117F0A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC7A7DBC-7CD9-40D5-ACA0-4B3369D237C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC7A7DBC-7CD9-40D5-ACA0-4B3369D237C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC7A7DBC-7CD9-40D5-ACA0-4B3369D237C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC7A7DBC-7CD9-40D5-ACA0-4B3369D237C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
