@@ -73,7 +73,7 @@ namespace OOP_step_127_ADO.NET_AutoLotClient
             }
 
             var dal = new InventoryDAL();
-            dal.ProcessCreditRisks(throwEx, 2);
+            dal.ProcessCreditRisks(throwEx, 1);
             WriteLine("Check Credit Risks table for result");
             ReadLine();
         }
