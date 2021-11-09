@@ -267,6 +267,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_127_ADO.NET_AutoLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_128_ADO.NET_EF_AutoLotConsoleApp", "OOP_step_128_ADO.NET_EF_AutoLotConsoleApp\OOP_step_128_ADO.NET_EF_AutoLotConsoleApp.csproj", "{5244EC19-22F9-4A79-BE90-1E656D011B94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_129_ADO.NET_EF_AutoLotDAL", "OOP_step_129_ADO.NET_EF_AutoLotDAL\OOP_step_129_ADO.NET_EF_AutoLotDAL.csproj", "{5E1172C0-D565-4882-A1DF-8DDBE647D6A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_129_ADO.NET_EF_AutoLotTestDrive", "OOP_step_129_ADO.NET_EF_AutoLotTestDrive\OOP_step_129_ADO.NET_EF_AutoLotTestDrive.csproj", "{79C8A56B-6F3C-4F60-ABDE-E473E5D656D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -793,6 +797,14 @@ Global
 		{5244EC19-22F9-4A79-BE90-1E656D011B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5244EC19-22F9-4A79-BE90-1E656D011B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5244EC19-22F9-4A79-BE90-1E656D011B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1172C0-D565-4882-A1DF-8DDBE647D6A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1172C0-D565-4882-A1DF-8DDBE647D6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1172C0-D565-4882-A1DF-8DDBE647D6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1172C0-D565-4882-A1DF-8DDBE647D6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79C8A56B-6F3C-4F60-ABDE-E473E5D656D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79C8A56B-6F3C-4F60-ABDE-E473E5D656D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79C8A56B-6F3C-4F60-ABDE-E473E5D656D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79C8A56B-6F3C-4F60-ABDE-E473E5D656D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
