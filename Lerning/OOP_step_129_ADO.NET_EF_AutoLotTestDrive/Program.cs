@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using OOP_step_129_ADO.NET_EF_AutoLotDAL.EF;
 using OOP_step_129_ADO.NET_EF_AutoLotDAL.Models;
 using OOP_step_129_ADO.NET_EF_AutoLotDAL.Repos;
@@ -69,6 +70,34 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotTestDrive
             using (var repo = new InventoryRepo())
             {
                 repo.Delete(carId, timeStamp);
+            }
+        }
+
+        private static void TestConcurrency()
+        {
+            var repo1 = new InventoryRepo();
+            //Use a second repo to make sure using a different context
+            var repo2 = new InventoryRepo();
+            var car1 = repo1.GetOne(1);
+            var car2 = repo2.GetOne(1);
+            car1.PetName = "NewName";
+            repo1.Save(car1);
+            car2.PetName = "OtherName";
+            try
+            {
+                repo2.Save(car2);
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                var entry = ex.Entries.Single();
+                var currentValues = entry.CurrentValues;
+                var originalValues = entry.OriginalValues;
+                var dbValues = entry.GetDatabaseValues();
+                Console.WriteLine(" ******** Concurrency ************");
+                Console.WriteLine("Type\tPetName");
+                Console.WriteLine($"Current:\t{currentValues[nameof(Inventory.PetName)]}");
+                Console.WriteLine($"Orig:\t{originalValues[nameof(Inventory.PetName)]}");
+                Console.WriteLine($"db:\t{dbValues[nameof(Inventory.PetName)]}");
             }
         }
     }
