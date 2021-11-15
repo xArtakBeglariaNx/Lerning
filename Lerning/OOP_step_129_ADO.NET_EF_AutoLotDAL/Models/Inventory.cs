@@ -11,7 +11,7 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.Models
     [Table("Inventory")]
     public partial class Inventory : EntityBase
     {
-        
+
         [StringLength(50)]
         public string Make { get; set; }
 
@@ -21,6 +21,7 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.Models
         [StringLength(50)]
         public string PetName { get; set; }
 
-        public virtual ICollection<Order> Orders { get; set; } = new HashSet<Order>();
+        public virtual ICollection<Order> Orders { get; set; }
+            = new HashSet<Order>();
     }
 }

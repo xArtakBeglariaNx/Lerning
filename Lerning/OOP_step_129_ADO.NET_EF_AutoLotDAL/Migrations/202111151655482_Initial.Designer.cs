@@ -7,13 +7,13 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class Final : IMigrationMetadata
+    public sealed partial class Initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Final));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "202111091758092_Final"; }
+            get { return "202111151655482_Initial"; }
         }
         
         string IMigrationMetadata.Source

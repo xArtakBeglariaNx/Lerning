@@ -10,10 +10,6 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.Models
 
     public partial class Customer : EntityBase
     {
-        
-        [NotMapped]
-        public string FullName => FirstName + " " + LastName;
-                
         [StringLength(50)]
         public string FirstName { get; set; }
 
@@ -21,5 +17,8 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.Models
         public string LastName { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; } = new HashSet<Order>();
+
+        [NotMapped]
+        public string FullName => $"{FirstName} {LastName}";
     }
 }

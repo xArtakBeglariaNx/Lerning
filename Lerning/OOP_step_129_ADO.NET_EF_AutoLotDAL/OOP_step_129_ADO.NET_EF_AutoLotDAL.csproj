@@ -55,13 +55,13 @@
   <ItemGroup>
     <Compile Include="EF\AutoLotEntities.cs" />
     <Compile Include="EF\MyDataInitializer.cs" />
-    <Compile Include="Migrations\202111091727587_Initial.cs" />
-    <Compile Include="Migrations\202111091727587_Initial.designer.cs">
-      <DependentUpon>202111091727587_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\202111151655482_Initial.cs" />
+    <Compile Include="Migrations\202111151655482_Initial.designer.cs">
+      <DependentUpon>202111151655482_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202111091758092_Final.cs" />
-    <Compile Include="Migrations\202111091758092_Final.designer.cs">
-      <DependentUpon>202111091758092_Final.cs</DependentUpon>
+    <Compile Include="Migrations\202111151709400_Final.cs" />
+    <Compile Include="Migrations\202111151709400_Final.designer.cs">
+      <DependentUpon>202111151709400_Final.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Base\EntityBase.cs" />
@@ -73,19 +73,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202111091727587_Initial.resx">
-      <DependentUpon>202111091727587_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111091758092_Final.resx">
-      <DependentUpon>202111091758092_Final.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202111151655482_Initial.resx">
+      <DependentUpon>202111151655482_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111151709400_Final.resx">
+      <DependentUpon>202111151709400_Final.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

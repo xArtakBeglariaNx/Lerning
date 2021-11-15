@@ -16,14 +16,14 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.EF
         {
             var customers = new List<Customer>
             {
-                new Customer { FirstName = "Dave", LastName = "Brener" },
-                new Customer { FirstName = "Matt", LastName = "Walton" },
-                new Customer { FirstName = "Steve", LastName = "Hagen" },
-                new Customer { FirstName = "Pat", LastName = "Walton" },
-                new Customer { FirstName = "Bad", LastName = "Customer" },
+                new Customer {FirstName = "Dave", LastName = "Brenner"},
+                new Customer {FirstName = "Matt", LastName = "Walton"},
+                new Customer {FirstName = "Steve", LastName = "Hagen"},
+                new Customer {FirstName = "Pat", LastName = "Walton"},
+                new Customer {FirstName = "Bad", LastName = "Customer"},
             };
-            customers.ForEach(x => context.Customers.AddOrUpdate(c => new { c.FirstName, c.LastName }, x));
-
+            customers.ForEach(x => context.Customers.AddOrUpdate(
+                c => new { c.FirstName, c.LastName }, x));
             var cars = new List<Inventory>
             {
                 new Inventory {Make = "VW", Color = "Black", PetName = "Zippy"},
@@ -37,15 +37,15 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.EF
                 new Inventory {Make = "Yugo", Color = "Brown", PetName = "Brownie"},
             };
             context.Cars.AddOrUpdate(x => new { x.Make, x.Color }, cars.ToArray());
-
             var orders = new List<Order>
             {
-                new Order {Car = cars[0], Customers = customers[0]},
-                new Order {Car = cars[1], Customers = customers[1]},
-                new Order {Car = cars[2], Customers = customers[2]},
-                new Order {Car = cars[3], Customers = customers[3]},
+                new Order {Car = cars[0], Customer = customers[0]},
+                new Order {Car = cars[1], Customer = customers[1]},
+                new Order {Car = cars[2], Customer = customers[2]},
+                new Order {Car = cars[3], Customer = customers[3]},
             };
             orders.ForEach(x => context.Orders.AddOrUpdate(c => new { c.CarId, c.CustomerId }, x));
+
             context.CreditRisks.AddOrUpdate(x => new { x.FirstName, x.LastName },
                 new CreditRisk
                 {
