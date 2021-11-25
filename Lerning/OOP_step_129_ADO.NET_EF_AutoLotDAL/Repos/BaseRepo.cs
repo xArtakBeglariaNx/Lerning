@@ -66,6 +66,7 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.Repos
 
         public List<T> ExecuteQuery(string sql, object[] sqlParametersObjects)
             => _table.SqlQuery(sql, sqlParametersObjects).ToList();
+
         internal int SaveChanges()
         {
             try

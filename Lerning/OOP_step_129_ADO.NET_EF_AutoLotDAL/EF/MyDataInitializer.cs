@@ -24,6 +24,7 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.EF
             };
             customers.ForEach(x => context.Customers.AddOrUpdate(
                 c => new { c.FirstName, c.LastName }, x));
+
             var cars = new List<Inventory>
             {
                 new Inventory {Make = "VW", Color = "Black", PetName = "Zippy"},
@@ -37,6 +38,7 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.EF
                 new Inventory {Make = "Yugo", Color = "Brown", PetName = "Brownie"},
             };
             context.Cars.AddOrUpdate(x => new { x.Make, x.Color }, cars.ToArray());
+
             var orders = new List<Order>
             {
                 new Order {Car = cars[0], Customer = customers[0]},

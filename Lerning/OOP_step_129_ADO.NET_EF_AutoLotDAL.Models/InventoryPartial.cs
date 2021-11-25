@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.Models
 {
-    public partial class Inventory
-    {
+	public partial class Inventory
+	{
 		public override string ToString()
 		{
 			// Since the PetName column could be empty, supply

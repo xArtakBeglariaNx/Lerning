@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="EF\AutoLotEntities.cs" />
     <Compile Include="EF\MyDataInitializer.cs" />
+    <Compile Include="Interception\ConsoleWriterInterceptor.cs" />
     <Compile Include="Migrations\202111151655482_Initial.cs" />
     <Compile Include="Migrations\202111151655482_Initial.designer.cs">
       <DependentUpon>202111151655482_Initial.cs</DependentUpon>
@@ -64,12 +65,6 @@
       <DependentUpon>202111151709400_Final.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Base\EntityBase.cs" />
-    <Compile Include="Models\Inventory.cs" />
-    <Compile Include="Models\InventoryPartial.cs" />
-    <Compile Include="Models\CreditRisk.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\BaseRepo.cs" />
     <Compile Include="Repos\InventoryRepo.cs" />
@@ -89,6 +84,12 @@
     <EmbeddedResource Include="Migrations\202111151709400_Final.resx">
       <DependentUpon>202111151709400_Final.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OOP_step_129_ADO.NET_EF_AutoLotDAL.Models\OOP_step_129_ADO.NET_EF_AutoLotDAL.Models.csproj">
+      <Project>{cb84f696-f158-40cd-aca4-e096c00ecca5}</Project>
+      <Name>OOP_step_129_ADO.NET_EF_AutoLotDAL.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

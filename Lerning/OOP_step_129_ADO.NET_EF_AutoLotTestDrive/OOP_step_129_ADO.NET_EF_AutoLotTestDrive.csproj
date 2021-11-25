@@ -61,6 +61,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OOP_step_129_ADO.NET_EF_AutoLotDAL.Models\OOP_step_129_ADO.NET_EF_AutoLotDAL.Models.csproj">
+      <Project>{cb84f696-f158-40cd-aca4-e096c00ecca5}</Project>
+      <Name>OOP_step_129_ADO.NET_EF_AutoLotDAL.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OOP_step_129_ADO.NET_EF_AutoLotDAL\OOP_step_129_ADO.NET_EF_AutoLotDAL.csproj">
       <Project>{5e1172c0-d565-4882-a1df-8ddbe647d6a5}</Project>
       <Name>OOP_step_129_ADO.NET_EF_AutoLotDAL</Name>

@@ -25,7 +25,7 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotTestDrive
                 }
             }
 
-            Console.WriteLine("------ Using Repositiry ------");
+            Console.WriteLine("------ Using Repository ------");
             using (var repo = new InventoryRepo())
             {
                 foreach (var c in repo.GetAll())
@@ -34,7 +34,7 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotTestDrive
                 }
             }
 
-            
+
             Console.ReadLine();
         }
 
@@ -44,7 +44,7 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotTestDrive
             {
                 repo.Add(car);
             }
-        }
+        }        
 
         private static void UpdateRecord(int carId)
         {
