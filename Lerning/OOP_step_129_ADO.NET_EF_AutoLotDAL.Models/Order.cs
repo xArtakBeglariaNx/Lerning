@@ -1,6 +1,5 @@
 namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.Models
 {
-
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
