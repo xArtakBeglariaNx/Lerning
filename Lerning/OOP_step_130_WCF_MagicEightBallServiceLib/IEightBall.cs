@@ -11,6 +11,6 @@ namespace OOP_step_130_WCF_MagicEightBallServiceLib
     public interface IEightBall
     {
         [OperationContract]
-        string ObuainAnswerToQuestion(string userQuestion);
+        string ObtainAnswerToQuestion(string userQuestion);
     }
 }

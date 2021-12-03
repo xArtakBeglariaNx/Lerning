@@ -14,7 +14,7 @@ namespace OOP_step_130_WCF_MagicEightBallServiceLib
             Console.WriteLine("The 8-Ball awaits your question...");
         }
 
-        public string ObuainAnswerToQuestion(string userQuestion)
+        public string ObtainAnswerToQuestion(string userQuestion)
         {
             string[] answers = { "Yes", "No", "Future Certain", "Hazy", "Ask again later", "Definitely"};
 
