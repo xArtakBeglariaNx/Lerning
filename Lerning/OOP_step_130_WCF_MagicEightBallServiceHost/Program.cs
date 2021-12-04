@@ -12,27 +12,27 @@ namespace OOP_step_130_WCF_MagicEightBallServiceHost
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("::-- Console based on WCF Host --::\n");
+            Console.WriteLine("\t::-- Console based on WCF Host --::\n");
             using (ServiceHost serviceHost = new ServiceHost(typeof(MagicEightBallService)))
             {
                 serviceHost.Open();
                 DispleyHostInfo(serviceHost);
-                Console.WriteLine("The service is ready");
-                Console.WriteLine("Press enter to terminate service");
+                Console.WriteLine("\tThe service is ready");
+                Console.WriteLine("\tPress enter to terminate service");
                 Console.ReadLine();
             }
         }
 
         static void DispleyHostInfo(ServiceHost host)
         {
-            Console.WriteLine("---- Host ----\n");
+            Console.WriteLine("\t---- Host ----\n");
             foreach (System.ServiceModel.Description.ServiceEndpoint se in host.Description.Endpoints)
             {
-                Console.WriteLine($"Adress: {se.Address}");
-                Console.WriteLine($"Binding: {se.Binding}");
-                Console.WriteLine($"Contract: {se.Contract}");
+                Console.WriteLine($"\tAdress: {se.Address}");
+                Console.WriteLine($"\tBinding: {se.Binding}");
+                Console.WriteLine($"\tContract: {se.Contract}\n");
             }
-            Console.WriteLine("\n<<********************>>\n");
+            Console.WriteLine("\n\t<<---------------------->>\n");
         }
     }
 }

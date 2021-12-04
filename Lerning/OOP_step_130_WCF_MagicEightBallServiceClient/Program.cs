@@ -12,14 +12,26 @@ namespace OOP_step_130_WCF_MagicEightBallServiceClient
         static void Main(string[] args)
         {
             Console.WriteLine("--- Ask the Magic 8 ball ---");
-
-            using (EightBallClient ball = new EightBallClient())
+            #region TCP connection
+            using (EightBallClient ball = new EightBallClient("NetTcpBinding_IEightBall"))
             {
                 Console.Write("Your question: ");
                 string question = Console.ReadLine();
                 string answer = ball.ObtainAnswerToQuestion(question);
                 Console.WriteLine($"EightBall says: {answer}");
             }
+            #endregion
+
+            #region Http Connection
+            using (EightBallClient ball = new EightBallClient("BasicHttpBinding_IEightBall"))
+            {
+                Console.Write("Your question: ");
+                string question = Console.ReadLine();
+                string answer = ball.ObtainAnswerToQuestion(question);
+                Console.WriteLine($"EightBall says: {answer}");
+            }
+            #endregion
+
             Console.ReadLine();
         }
     }
