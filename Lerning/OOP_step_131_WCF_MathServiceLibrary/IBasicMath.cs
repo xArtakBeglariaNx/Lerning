@@ -10,6 +10,7 @@ namespace OOP_step_131_WCF_MathServiceLibrary
     [ServiceContract(Namespace ="http://MyCompany.com")]
     public interface IBasicMath
     {
+        [OperationContract]
         int Add(int x, int y);
     }
 }
