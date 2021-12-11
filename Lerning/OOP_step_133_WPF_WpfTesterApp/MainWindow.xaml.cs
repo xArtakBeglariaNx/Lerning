@@ -25,6 +25,18 @@ namespace OOP_step_133_WPF_WpfTesterApp
             InitializeComponent();
             this.Closed += MainWindow_OnClosed;
             this.Closing += MainWindow_Closing;
+            this.MouseMove += MainWindow_MouseMove;
+            this.KeyDown += MainWindow_KeyDown;
+        }
+
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            ClickMe.Content = e.Key.ToString();
+        }
+
+        private void MainWindow_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.Title = e.GetPosition(this).ToString();
         }
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
