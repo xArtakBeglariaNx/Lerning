@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31129.286
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PB_step_1_Lerning", "Lerning_step_1\PB_step_1_Lerning.csproj", "{E44B2F17-C8D2-4CFE-984F-5E449AD36E3F}"
 EndProject
@@ -295,6 +295,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP_step_133_WPF_WpfTesterApp", "OOP_step_133_WPF_WpfTesterApp", "{3ABCAE21-0701-4224-9848-25D2162179C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_133_WPF_WpfTesterApp", "OOP_step_133_WPF_WpfTesterApp\OOP_step_133_WPF_WpfTesterApp.csproj", "{BEB9BC84-F3A9-4FA9-A922-42ABE9434567}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP_step_134_WPF_VisualLayoutTester", "OOP_step_134_WPF_VisualLayoutTester", "{7D4A4C29-076C-4782-9F5C-2F147314E836}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_134_WPF_VisualLayoutTester", "OOP_step_134_WPF_VisualLayoutTester\OOP_step_134_WPF_VisualLayoutTester.csproj", "{B9D1CDFA-A2AC-4686-A71B-F12F083D0628}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP_step_135_WPF_MyWordPad", "OOP_step_135_WPF_MyWordPad", "{11BF9785-0214-4C85-9F09-02F12DED5723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_135_WPF_MyWordPad", "OOP_step_135_WPF_MyWordPad\OOP_step_135_WPF_MyWordPad.csproj", "{8572F977-05C3-4F3E-8F10-F3FE820E01BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -862,6 +870,14 @@ Global
 		{BEB9BC84-F3A9-4FA9-A922-42ABE9434567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEB9BC84-F3A9-4FA9-A922-42ABE9434567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEB9BC84-F3A9-4FA9-A922-42ABE9434567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D1CDFA-A2AC-4686-A71B-F12F083D0628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D1CDFA-A2AC-4686-A71B-F12F083D0628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D1CDFA-A2AC-4686-A71B-F12F083D0628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D1CDFA-A2AC-4686-A71B-F12F083D0628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8572F977-05C3-4F3E-8F10-F3FE820E01BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8572F977-05C3-4F3E-8F10-F3FE820E01BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8572F977-05C3-4F3E-8F10-F3FE820E01BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8572F977-05C3-4F3E-8F10-F3FE820E01BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -874,6 +890,8 @@ Global
 		{DED45A90-50AA-4DB1-BB72-E662A35B2C91} = {4385B50F-3C5C-415A-9891-E899615F6789}
 		{4134CBD7-1B7A-42BF-861F-C9E8E8BA8F09} = {4385B50F-3C5C-415A-9891-E899615F6789}
 		{BEB9BC84-F3A9-4FA9-A922-42ABE9434567} = {3ABCAE21-0701-4224-9848-25D2162179C8}
+		{B9D1CDFA-A2AC-4686-A71B-F12F083D0628} = {7D4A4C29-076C-4782-9F5C-2F147314E836}
+		{8572F977-05C3-4F3E-8F10-F3FE820E01BC} = {11BF9785-0214-4C85-9F09-02F12DED5723}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D96674E3-A881-437F-BAA8-939366BB3D98}
