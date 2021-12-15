@@ -25,32 +25,64 @@ namespace OOP_step_135_WPF_MyWordPad
         public MainWindow()
         {
             InitializeComponent();
+            SetF1CommandBinding();
         }
-                
+
+        private void SetF1CommandBinding()
+        {
+            CommandBinding helpBinding = new CommandBinding(ApplicationCommands.Help);
+            helpBinding.CanExecute += HelpBinding_CanExecute;
+            helpBinding.Executed += HelpBinding_Executed;
+            CommandBindings.Add(helpBinding);
+        }
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            MessageBox.Show("look it is not difficult. Just type something!", "Help");
+        }
+
+        private void HelpBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+
         private void MouseEnterExitArea(object sender, MouseEventArgs e)
         {
-
-        }
-
-        private void MouseLeaveArea(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void FileExit_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void ToolsSpellingHints_Click(object sender, RoutedEventArgs e)
-        {
-
+            statBarText.Text = "Exit the Application";
         }
 
         private void MouseEnterToolsHintsArea(object sender, MouseEventArgs e)
         {
-
+            statBarText.Text = "Show Speling Suggestions";
         }
+
+        private void MouseLeaveArea(object sender, MouseEventArgs e)
+        {
+            statBarText.Text = "Ready";
+        }
+
+        private void FileExit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void ToolsSpellingHints_Click(object sender, RoutedEventArgs e)
+        {
+            string spellingHints = string.Empty;
+
+            SpellingError error = txtData.GetSpellingError(txtData.CaretIndex);
+            if (error != null)
+            {
+                foreach (string s in error.Suggestions)
+                {
+                    spellingHints += $"{s}\n";
+                }
+
+                lbSpellingHints.Content = spellingHints;
+                expanderSpelling.IsExpanded = true;
+            }
+        }
+
 
     }
 }

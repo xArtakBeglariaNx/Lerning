@@ -15,12 +15,17 @@
 
                 </MenuItem>
             </MenuItem>
+            
+            <MenuItem Header="_Edit">
+                <MenuItem Command="ApplicationCommands.Copy"/>
+                <MenuItem Command="ApplicationCommands.Cut"/>
+                <MenuItem Command="ApplicationCommands.Paste"/>
+            </MenuItem>
 
             <MenuItem Header="_Tools">
                 <MenuItem Header="_Spelling Hints" MouseEnter="MouseEnterToolsHintsArea" MouseLeave="MouseLeaveArea" Click="ToolsSpellingHints_Click">
                 </MenuItem>
             </MenuItem>
-            <Separator/>
         </Menu>
         <ToolBar DockPanel.Dock="Top">
             <Button Content="Exit" MouseEnter="MouseEnterExitArea" MouseLeave="MouseLeaveArea" Click="FileExit_Click"/>
