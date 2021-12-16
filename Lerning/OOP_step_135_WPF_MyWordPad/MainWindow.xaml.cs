@@ -83,6 +83,33 @@ namespace OOP_step_135_WPF_MyWordPad
             }
         }
 
+        private void OpenCmdCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
 
+        private void OpenCmdExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            var openDlg = new OpenFileDialog() { Filter = "Text Files |*.txt"};
+            if (true == openDlg.ShowDialog())
+            {
+                string dataFromFile = File.ReadAllText(openDlg.FileName);
+                txtData.Text = dataFromFile;
+            }
+        }
+
+        private void SaveCmdCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+
+        private void SaveCmdExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            var saveDlg = new SaveFileDialog() { Filter = "Text File |*.txt" };
+            if (true == saveDlg.ShowDialog())
+            {
+                File.WriteAllText(saveDlg.FileName, txtData.Text);
+            }
+        }
     }
 }
