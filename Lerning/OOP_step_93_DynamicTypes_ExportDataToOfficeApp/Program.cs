@@ -31,7 +31,7 @@ namespace OOP_step_93_DynamicTypes_ExportDataToOfficeApp
             excelApp.Visible = true;
 
             // This example uses a single workSheet.
-            Excel._Worksheet workSheet = excelApp.ActiveSheet;
+            Excel._Worksheet workSheet = (Excel._Worksheet)excelApp.ActiveSheet;
 
             // Establish column headings in cells.
             workSheet.Cells[1, "A"] = "Make";
