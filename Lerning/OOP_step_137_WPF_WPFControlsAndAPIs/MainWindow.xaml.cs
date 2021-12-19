@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_step_129_ADO.NET_EF_AutoLotDAL.Repos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,7 +39,7 @@ namespace OOP_step_137_WPF_WPFControlsAndAPIs
                     this.MyInkCanvas.EditingMode = InkCanvasEditingMode.Ink;
                     break;
                 case "Erase Mode":
-                    this.MyInkCanvas.EditingMode=InkCanvasEditingMode.EraseByStroke;
+                    this.MyInkCanvas.EditingMode = InkCanvasEditingMode.EraseByStroke;
                     break;
                 case "Select Mode":
                     this.MyInkCanvas.EditingMode = InkCanvasEditingMode.Select;
@@ -73,6 +74,23 @@ namespace OOP_step_137_WPF_WPFControlsAndAPIs
         private void Clear(object sender, RoutedEventArgs e)
         {
             this.MyInkCanvas.Strokes.Clear();
+        }
+
+        private void SetBindings()
+        {
+            Binding b = new Binding();
+            b.Converter = new MyDoubleConvertor();
+            b.Source = this.mySB;
+            b.Path = new PropertyPath("Value");
+            this.labelSBThumb.SetBinding(Label.ContentProperty, b);
+        }
+
+        private void ConfigureGrid()
+        {
+            using (var repo = new InventoryRepo())
+            {
+                gridInventory.ItemsSource = repo.GetAll().Select(x => new {x.Id, x.Make, x.Color, x.PetName});
+            }
         }
     }
 }

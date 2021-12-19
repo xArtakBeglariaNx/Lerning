@@ -69,6 +69,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyDoubleConvertor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +94,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OOP_step_129_ADO.NET_EF_AutoLotDAL.Models\OOP_step_129_ADO.NET_EF_AutoLotDAL.Models.csproj">
+      <Project>{CB84F696-F158-40CD-ACA4-E096C00ECCA5}</Project>
+      <Name>OOP_step_129_ADO.NET_EF_AutoLotDAL.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OOP_step_129_ADO.NET_EF_AutoLotDAL\OOP_step_129_ADO.NET_EF_AutoLotDAL.csproj">
+      <Project>{5e1172c0-d565-4882-a1df-8ddbe647d6a5}</Project>
+      <Name>OOP_step_129_ADO.NET_EF_AutoLotDAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

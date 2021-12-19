@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:OOP_step_137_WPF_WPFControlsAndAPIs"
         mc:Ignorable="d"
         Title="MainWindow" Height="300" Width="800">
+    <Window.Resources>
+        <local:MyDoubleConvertor x:Key="DoubleConvertor"/>
+    </Window.Resources>
 
     <TabControl>
         <TabItem Header="Ink API">
@@ -52,11 +55,23 @@
                 <InkCanvas x:Name="MyInkCanvas" Background="White"/>
             </StackPanel>
         </TabItem>
-        <TabItem Header="Data Binding">
-            <Grid Background="#FFE5E5E5"/>
+        <TabItem x:Name="tabDataBinding" Header="Data Binding">
+            <StackPanel DataContext="{Binding ElementName=mySB}" Background="#FFE5E5E5">
+                <Label Content="Move the scroll bar to see the current value"/>
+                <!-- Значение линейки является источником этой привязки-->
+                <ScrollBar x:Name="mySB" Orientation="Horizontal" Height="30" Minimum="1" Maximum="100" LargeChange="1" SmallChange="1"/>
+                <!--Содержимое метки будет привязанно к линейке прокрутки-->
+                <Label x:Name="labelSBThumb" Height="30" 
+                       BorderBrush="Blue" 
+                       BorderThickness="2" 
+                       ContentStringFormat="{} {0:F0}"/>
+                <Button Content="Click" Height="200" FontSize="{Binding Path=Value}"/>
+            </StackPanel>
         </TabItem>
-        <TabItem Header="DataGrid">
-            <Grid Background="#FFE5E5E5"/>
+        <TabItem x:Name="tabDataGrid" Header="DataGrid">
+            <StackPanel Background="#FFE5E5E5">
+                <DataGrid Name="gridInventory" Height="288"/>
+            </StackPanel>
         </TabItem>
     </TabControl>
 </Window>
