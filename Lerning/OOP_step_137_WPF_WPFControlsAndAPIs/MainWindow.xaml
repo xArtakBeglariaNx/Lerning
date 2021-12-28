@@ -22,7 +22,7 @@
                         </WrapPanel>
                     </Border>
                     <Separator/>
-                    <ComboBox x:Name="comboColors" Width="175" Margin="10,0,0,0" SelectionChanged="ColorChanged">                        
+                    <ComboBox x:Name="comboColors" Width="175" Margin="10,0,0,0" SelectionChanged="ColorChanged">
                         <StackPanel Orientation="Horizontal" Tag="Red">
                             <Ellipse Fill="Red" Height="25" Width="25"/>
                             <Label FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Red"/>
@@ -65,7 +65,7 @@
                        BorderBrush="Blue" 
                        BorderThickness="2" 
                        ContentStringFormat="{} {0:F0}"/>
-                <Button Content="Click" Height="200" FontSize="{Binding Path=Value}"/>
+                <Button Content="Click" Height="170" FontSize="{Binding Path=Value}" Width="792"/>
             </StackPanel>
         </TabItem>
         <TabItem x:Name="tabDataGrid" Header="DataGrid">

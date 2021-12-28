@@ -29,6 +29,7 @@ namespace OOP_step_137_WPF_WPFControlsAndAPIs
             this.MyInkCanvas.EditingMode = InkCanvasEditingMode.Ink;
             this.inkRadio.IsChecked = true;
             this.comboColors.SelectedIndex = 0;
+            SetBindings();
         }
 
         private void RadioButtonCliked(object sender, RoutedEventArgs e)
@@ -80,7 +81,7 @@ namespace OOP_step_137_WPF_WPFControlsAndAPIs
         {
             Binding b = new Binding();
             b.Converter = new MyDoubleConvertor();
-            b.Source = this.mySB;
+            b.Source = mySB;
             b.Path = new PropertyPath("Value");
             this.labelSBThumb.SetBinding(Label.ContentProperty, b);
         }
