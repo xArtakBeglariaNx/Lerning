@@ -26,6 +26,7 @@ namespace OOP_step_138_WPF_CustomDepProp
         }
 
         private int _currNumber = 0;
+
         //public int CurrentNumber
         //{
         //    get { return _currNumber; }
@@ -34,7 +35,6 @@ namespace OOP_step_138_WPF_CustomDepProp
         //        numberDisplay.Content = CurrentNumber.ToString();
         //    }
         //}
-
 
         public int CurrentNumber
         {
