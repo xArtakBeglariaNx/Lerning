@@ -7,9 +7,20 @@
         mc:Ignorable="d"
         Title="Fun With Shapes" Height="450" Width="800">
     <DockPanel LastChildFill="True">
+        <DockPanel.LayoutTransform>
+            <RotateTransform Angle="360"/>
+        </DockPanel.LayoutTransform>
         <ToolBar DockPanel.Dock="Top" Name="mainToolBar" Height="50">
             <RadioButton Name="circleOption" GroupName="shapeSelection" Click="circleOption_Click">
-                <Ellipse Fill="Green" Height="35" Width="35"/>
+                <Ellipse Height="35" Width="35">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FF103DAB" Offset="0.293"/>
+                            <GradientStop Color="#FF040C03" Offset="0.607"/>
+                            <GradientStop Color="#FF4DEC37" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
             </RadioButton>
             <RadioButton Name="rectOption" GroupName="shapeSelection" Click="rectOption_Click">
                 <Rectangle Fill="Red" Height="35" Width="35" RadiusX="10" RadiusY="10"/>
@@ -19,6 +30,21 @@
                       X1="10" Y1="10" Y2="25" X2="25"
                       StrokeStartLineCap="Triangle" StrokeEndLineCap="Round"/>
             </RadioButton>
+            <ToggleButton Name="flipCanvas" Click="flipCanvas_Click" Content="Flip Canvas">
+                <ToggleButton.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFFDDB7C"/>
+                        <GradientStop Color="#FFC3FF00" Offset="1"/>
+                        <GradientStop Color="#FF5DE071" Offset="0.56"/>
+                    </RadialGradientBrush>
+                </ToggleButton.Background>
+                <ToggleButton.BorderBrush>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFD31ADE" Offset="1"/>
+                    </RadialGradientBrush>
+                </ToggleButton.BorderBrush>
+            </ToggleButton>
         </ToolBar>
         <Canvas Background="LightBlue" Name="canvasDrawingArea" MouseLeftButtonDown="canvasDrawingArea_MouseLeftButtonDown" MouseRightButtonDown="canvasDrawingArea_MouseRightButtonDown"/>
     </DockPanel>

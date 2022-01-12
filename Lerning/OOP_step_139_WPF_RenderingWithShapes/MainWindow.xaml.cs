@@ -51,7 +51,12 @@ namespace OOP_step_139_WPF_RenderingWithShapes
             switch (_currentShape)
             {
                 case SelectedShape.Circle:
-                    shapeToTender = new Ellipse() { Fill = Brushes.Green, Height = 35, Width = 35 };
+                    shapeToTender = new Ellipse() { Height = 35, Width = 35 };
+                    RadialGradientBrush brush = new RadialGradientBrush();
+                    brush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#FF103DAB"), 0));
+                    brush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#FF040C03"), 0.607));
+                    brush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#FF4DEC37"), 1));
+                    shapeToTender.Fill = brush;
                     break;
                 case SelectedShape.Rectangle:
                     shapeToTender = new Rectangle() { Fill = Brushes.Red, Height = 35, Width = 35, RadiusX = 10, RadiusY = 10 };
@@ -69,6 +74,12 @@ namespace OOP_step_139_WPF_RenderingWithShapes
                     return;
             }
 
+            if (flipCanvas.IsChecked == true)
+            {
+                RotateTransform rotate = new RotateTransform(-180);
+                canvasDrawingArea.LayoutTransform = rotate;
+            }
+
             Canvas.SetLeft(shapeToTender, e.GetPosition(canvasDrawingArea).X);
             Canvas.SetTop(shapeToTender, e.GetPosition(canvasDrawingArea).Y);
 
@@ -84,6 +95,19 @@ namespace OOP_step_139_WPF_RenderingWithShapes
             if (result != null)
             {
                 canvasDrawingArea.Children.Remove(result.VisualHit as Shape);
+            }
+        }
+
+        private void flipCanvas_Click(object sender, RoutedEventArgs e)
+        {
+            if (flipCanvas.IsChecked == true)
+            {
+                RotateTransform rotate = new RotateTransform(-180);
+                canvasDrawingArea.LayoutTransform = rotate;
+            }
+            else
+            {
+                canvasDrawingArea.LayoutTransform = null;
             }
         }
     }
