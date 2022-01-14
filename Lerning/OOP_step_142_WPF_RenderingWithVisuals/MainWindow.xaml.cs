@@ -25,18 +25,18 @@ namespace OOP_step_142_WPF_RenderingWithVisuals
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             const int TextFontSize = 30;
 
             //Create obj System.Windows.Media.FormattedText            
-            FormattedText text = new FormattedText("Hello visual Layer", 
-                new System.Globalization.CultureInfo("en-us"), 
-                FlowDirection.LeftToRight, 
-                new Typeface(this.FontFamily, FontStyles.Italic, FontWeights.DemiBold, FontStretches.UltraExpanded), 
-                TextFontSize, 
-                Brushes.Green, 
-                null, 
+            FormattedText text = new FormattedText("Hello visual Layer",
+                new System.Globalization.CultureInfo("en-us"),
+                FlowDirection.LeftToRight,
+                new Typeface(this.FontFamily, FontStyles.Italic, FontWeights.DemiBold, FontStretches.UltraExpanded),
+                TextFontSize,
+                Brushes.Green,
+                null,
                 VisualTreeHelper.GetDpi(this).PixelsPerDip);
 
             //Create DrawingVisual and Get DrawingContext
@@ -44,9 +44,8 @@ namespace OOP_step_142_WPF_RenderingWithVisuals
             using (DrawingContext drawingContext = drawingVisual.RenderOpen())
             {
                 //Call anything methods from DrawingContext to visual data
-                drawingContext.DrawRoundedRectangle(
-                    Brushes.Yellow,
-                    new Pen (Brushes.Black, 5),
+                drawingContext.DrawRoundedRectangle(Brushes.Yellow,
+                    new Pen(Brushes.Black, 5),
                     new Rect(5, 5, 450, 100), 20, 20);
                 drawingContext.DrawText(text, new Point(20, 20));
 

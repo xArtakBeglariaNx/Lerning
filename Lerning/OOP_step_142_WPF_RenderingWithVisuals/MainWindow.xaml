@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:OOP_step_142_WPF_RenderingWithVisuals"
         mc:Ignorable="d"
         Title="Fun with Visual Layers" Height="350" Width="525"
-        Loaded="Window_Loaded">
+        Loaded="MainWindow_Loaded">
     <StackPanel Background="AliceBlue" Name="myStackPanel">
         <Image Name="myImage" Height="80"/>
+        <local:CustomVisualFrameworkElement/>
     </StackPanel>
 </Window>
