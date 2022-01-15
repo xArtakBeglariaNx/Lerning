@@ -25,7 +25,7 @@ namespace OOP_step_143_WPF_BinaryResourcesApp
             InitializeComponent();
         }
 
-        List<BitmapImage> _images = new List<BitmapImage>();
+        private List<BitmapImage> _images = new List<BitmapImage>();
         private int _currImage = 0;
 
         private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)

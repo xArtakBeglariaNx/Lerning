@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:local="clr-namespace:OOP_step_144_WPF_MyBrushesLibrary"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <RadialGradientBrush x:Key="myBrush">
+        <GradientStop Color="Aqua" Offset="0.4"/>
+        <GradientStop Color="YellowGreen" Offset="0.8"/>
+        <GradientStop Color="OrangeRed" Offset="1"/>
+    </RadialGradientBrush>
+</ResourceDictionary>
