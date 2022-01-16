@@ -1,0 +1,13 @@
+﻿<Window x:Class="OOP_step_146_WPF_WPFStyles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_step_146_WPF_WPFStyles"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label x:Name="lblInfo" Content="This style is boring...." Width="150" Style="{StaticResource BasicCantrolStyle}"/>
+        <Button x:Name="btnTestButton" Content="Yes, but we are reusing settings!" Width="250" Cursor="Help" Style="{DynamicResource BasicCantrolStyle}"/>
+    </StackPanel>
+</Window>
