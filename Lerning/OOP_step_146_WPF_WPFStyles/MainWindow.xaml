@@ -6,8 +6,23 @@
         xmlns:local="clr-namespace:OOP_step_146_WPF_WPFStyles"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
-        <Label x:Name="lblInfo" Content="This style is boring...." Width="150" Style="{StaticResource BasicCantrolStyle}"/>
-        <Button x:Name="btnTestButton" Content="Yes, but we are reusing settings!" Width="250" Cursor="Help" Style="{DynamicResource BasicCantrolStyle}"/>
-    </StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.Column="0">
+            <Label Content="Please pick a style for button" Height="50" Width="200" DockPanel.Dock="Top" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ListBox x:Name="lstBoxStyles" Height="164" Width="149" 
+                     Background="LightBlue" SelectionChanged="comboStyles_SelectionChanged" 
+                     VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="15"/>
+        </DockPanel>
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Top" Margin="0, 0, 0, 50" Grid.Column="1">
+            <Label x:Name="lblInfo" Content="This style is boring...." Width="150" Style="{StaticResource BasicCantrolStyle}"/>
+            <Button x:Name="btnTestButton" Content="Yes, but we are reusing settings!" Width="250" Cursor="Help" Style="{DynamicResource BasicCantrolStyle}"/>
+            <Button x:Name="btnAnotherButton" Content="Ok!" Margin="0, 5, 0, 0" Height="50" Width="50" Cursor="Help" Style="{StaticResource TiltButton}"/>
+            <TextBox x:Name="txtBox" Width="250" Height="100" Margin="0, 20, 0, 0" BorderThickness="5" Text="Hello Bro. You are the best!!!"/>
+            <Button x:Name="btnWithAnim" Content="Yes" Margin="0, 20, 0, 0" Style="{StaticResource GrowingButtonStyle}" FontFamily="Bold"/>
+        </StackPanel>
+    </Grid>
 </Window>

@@ -23,6 +23,17 @@ namespace OOP_step_146_WPF_WPFStyles
         public MainWindow()
         {
             InitializeComponent();
+            lstBoxStyles.Items.Add("BasicCantrolStyle");
+            lstBoxStyles.Items.Add("BigGreenButton");
+            lstBoxStyles.Items.Add("TiltButton");
+            lstBoxStyles.Items.Add("GrowingButtonStyle");
+        }
+
+        private void comboStyles_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var currStyle = (Style)TryFindResource(lstBoxStyles.SelectedValue);
+            if (currStyle == null) return;
+            this.lstBoxStyles.Style = currStyle;
         }
     }
 }
