@@ -354,6 +354,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP_step_147_WPF_TreesAndTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_147_WPF_TreesAndTemplatesApp", "TreesAndTemplatesApp\OOP_step_147_WPF_TreesAndTemplatesApp.csproj", "{F2B346F7-318D-4267-BD9B-F9B002C29EC3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP_step_148_WPF_ButtonTemplates", "OOP_step_148_WPF_ButtonTemplates", "{1F3D9534-9FCB-47F2-87CD-A827C5460F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_148_WPF_ButtonTemplates", "OOP_step_148_WPF_ButtonTemplates\OOP_step_148_WPF_ButtonTemplates.csproj", "{60C634A8-EEE2-4850-A37E-653BAE6A2D52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -980,6 +984,10 @@ Global
 		{F2B346F7-318D-4267-BD9B-F9B002C29EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2B346F7-318D-4267-BD9B-F9B002C29EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2B346F7-318D-4267-BD9B-F9B002C29EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C634A8-EEE2-4850-A37E-653BAE6A2D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C634A8-EEE2-4850-A37E-653BAE6A2D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C634A8-EEE2-4850-A37E-653BAE6A2D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C634A8-EEE2-4850-A37E-653BAE6A2D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1007,6 +1015,7 @@ Global
 		{B8234BF5-B387-4D0D-B74B-21066838A39D} = {F01B7182-C6C1-4ACA-98EA-F27737416A5C}
 		{3F9A46BA-53AD-45C8-A117-8B1DCB3D9AE6} = {2925385B-E258-45ED-8ED9-1F46CB1E4C92}
 		{F2B346F7-318D-4267-BD9B-F9B002C29EC3} = {5EE093C5-D972-4F66-B62F-917CD566AC12}
+		{60C634A8-EEE2-4850-A37E-653BAE6A2D52} = {1F3D9534-9FCB-47F2-87CD-A827C5460F23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D96674E3-A881-437F-BAA8-939366BB3D98}
