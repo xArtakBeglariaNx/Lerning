@@ -28,7 +28,7 @@ namespace OOP_step_148_WPF_ButtonTemplates
 
         private void myButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You");
+            MessageBox.Show("You there!");
         }
     }
 }
