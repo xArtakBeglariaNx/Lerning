@@ -358,6 +358,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP_step_148_WPF_ButtonTemp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_148_WPF_ButtonTemplates", "OOP_step_148_WPF_ButtonTemplates\OOP_step_148_WPF_ButtonTemplates.csproj", "{60C634A8-EEE2-4850-A37E-653BAE6A2D52}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP_step_149_WPF_WpfNotifications", "OOP_step_149_WPF_WpfNotifications", "{708C7570-54CC-409E-B38A-A22477FE2D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_step_149_WPF_WpfNotifications", "OOP_step_149_WPF_WpfNotifications\OOP_step_149_WPF_WpfNotifications.csproj", "{0467C23B-2AF7-43F8-8144-F70A4BF502B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -988,6 +992,10 @@ Global
 		{60C634A8-EEE2-4850-A37E-653BAE6A2D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60C634A8-EEE2-4850-A37E-653BAE6A2D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60C634A8-EEE2-4850-A37E-653BAE6A2D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0467C23B-2AF7-43F8-8144-F70A4BF502B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0467C23B-2AF7-43F8-8144-F70A4BF502B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0467C23B-2AF7-43F8-8144-F70A4BF502B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0467C23B-2AF7-43F8-8144-F70A4BF502B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1016,6 +1024,7 @@ Global
 		{3F9A46BA-53AD-45C8-A117-8B1DCB3D9AE6} = {2925385B-E258-45ED-8ED9-1F46CB1E4C92}
 		{F2B346F7-318D-4267-BD9B-F9B002C29EC3} = {5EE093C5-D972-4F66-B62F-917CD566AC12}
 		{60C634A8-EEE2-4850-A37E-653BAE6A2D52} = {1F3D9534-9FCB-47F2-87CD-A827C5460F23}
+		{0467C23B-2AF7-43F8-8144-F70A4BF502B6} = {708C7570-54CC-409E-B38A-A22477FE2D20}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D96674E3-A881-437F-BAA8-939366BB3D98}
