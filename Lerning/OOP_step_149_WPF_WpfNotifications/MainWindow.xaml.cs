@@ -22,7 +22,7 @@ namespace OOP_step_149_WPF_WpfNotifications
     /// </summary>
     public partial class MainWindow : Window
     {
-        readonly IList<Inventory> _cars = new ObservableCollection<Inventory>();
+        private readonly IList<Inventory> _cars = new ObservableCollection<Inventory>();
         public MainWindow()
         {
             InitializeComponent();

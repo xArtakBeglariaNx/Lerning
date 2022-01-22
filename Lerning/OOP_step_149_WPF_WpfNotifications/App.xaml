@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:OOP_step_149_WPF_WpfNotifications"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        
     </Application.Resources>
 </Application>
