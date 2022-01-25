@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,50 +9,73 @@ using System.Threading.Tasks;
 
 namespace OOP_step_150_WPF_WpfValidations.Models
 {
-    public partial class Inventory : IDataErrorInfo
-    {
-        private string _error;
-
+    public partial class Inventory :  EntityBase, IDataErrorInfo
+    {        
         public string this[string columnName]
         {
             get {
+                bool hasError = false;
                 switch (columnName)
                 {
                     case nameof(CarId):
+                        AddErrors(nameof(CarId), GetErrorsFromAnnotations(nameof(CarId), CarId));
                         break;
                     case nameof(Make):
-                        if(Make == "ModelT")
+                        hasError = CheckMakeAndColor();
+                        if (Make == "ModelT")
                         {
-                            return "To old";
+                            AddError(nameof(Make), $"Too Old");
+                            hasError = true;
                         }
-                        return CheckMakeAndColor();
+                        if (!hasError)
+                        {
+                            ClearErrors(nameof(Make));
+                            ClearErrors(nameof(Color));
+                        }
+                        AddErrors(nameof(Make), GetErrorsFromAnnotations(nameof(Make), Make));
+                        break;
                     case nameof(Color):
-                        return CheckMakeAndColor();
+                        hasError = CheckMakeAndColor();
+                        //if (IsChanged)
+                        //{
+                        //    AddError(nameof(Color), $"{Color} not match in data base with {Make}");
+                        //    hasError = true;
+                        //}
+                        if (!hasError)
+                        {
+                            ClearErrors(nameof(Make));
+                            ClearErrors(nameof(Color));
+                        }
+                        AddErrors(nameof(Color), GetErrorsFromAnnotations(nameof(Color), Color));
+                        break;
                     case nameof(PetName):
+                        AddErrors(nameof(PetName), GetErrorsFromAnnotations(nameof(PetName), PetName));
                         break;
                 }
-                return string.Empty;
+                return Error;
             }
         }
 
-        private string CheckMakeAndColor()
+        internal bool CheckMakeAndColor()
         {
-            if (Make == "Chevy" && Color == "Pink")
+            if(Make == "Chevy" && Color == "Pink")
             {
-                return $"{Make}'s is dont come in {Color}";
+                AddError(nameof(Make), $"{Make}'s dont come in {Color}");
+                AddError(nameof(Color), $"{Make}'s dont come in {Color}");
+                return true;
             }
-            return string.Empty;
+            return false;
         }
 
-        public string Error => _error;
+        public string Error => string.Empty;
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            if (propertyName != nameof(IsChanged))
-            {
-                IsChanged = true;
-            }
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(string.Empty));
-        }
+        //protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        //{
+        //    if (propertyName != nameof(IsChanged))
+        //    {
+        //        IsChanged = true;
+        //    }
+        //    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(string.Empty));
+        //}
     }
 }

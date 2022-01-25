@@ -30,13 +30,15 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Grid.Column="0" Grid.Row="0" Content="Id"/>
             <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Path=CarId}"/>
             <Label Grid.Column="0" Grid.Row="1" Content="Make"/>
             <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Path=Make, ValidatesOnDataErrors=True}"/>
             <Label Grid.Column="0" Grid.Row="2" Content="Color"/>
-            <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Path=Color, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Path=Color, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"/>
             <Label Grid.Column="0" Grid.Row="3" Content="Pet Name"/>
             <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding Path=PetName}"/>
             <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,5,0,5">
@@ -45,6 +47,14 @@
             </StackPanel>
             <Label Grid.Column="0" Grid.Row="4" Content="Is Changed"/>
             <CheckBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Margin="10,0,200,0" IsEnabled="False" IsChecked="{Binding Path=IsChanged}"/>
+            <Label Grid.Column="0" Grid.Row="5" Content="Errors:" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <ListBox Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" ItemsSource="{Binding ElementName=DetailsGrid,Path=(Validation.Errors)}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <ListBox ItemsSource="{Binding Path=ErrorContent}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
     </Grid>
 </Window>

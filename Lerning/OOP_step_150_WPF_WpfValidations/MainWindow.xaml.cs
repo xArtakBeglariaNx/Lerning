@@ -39,8 +39,9 @@ namespace OOP_step_150_WPF_WpfValidations
 
         private void btnAddCar_Click(object sender, RoutedEventArgs e)
         {
-            var maxCout = _cars?.Max(x => x.CarId) ?? 0;
-            _cars?.Add(new Inventory { CarId = ++maxCout, Color = "Yellow", Make = "VW", PetName = "Birdie" });
+            var maxCount = _cars?.Max(x => x.CarId) ?? 0;
+            Random randomChar = new Random();
+            _cars?.Add(new Inventory { CarId = ++maxCount, Color = "Yellow", Make = "VW", PetName = $"Birdie_{randomChar.Next(200)}", IsChanged = false});
         }
     }
 }
