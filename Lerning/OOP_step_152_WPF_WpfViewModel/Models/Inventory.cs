@@ -26,5 +26,15 @@ namespace OOP_step_152_WPF_WpfViewModel.Models
         public string PetName { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
+        
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            if (propertyName != nameof(IsChanged))
+            {
+                IsChanged = true;
+            }
+            //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(string.Empty));
+        }
     }
 }

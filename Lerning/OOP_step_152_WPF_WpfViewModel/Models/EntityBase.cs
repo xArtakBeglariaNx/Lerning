@@ -6,8 +6,6 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
-using ValidationResult = System.ComponentModel.DataAnnotations.ValidationResult;
 
 namespace OOP_step_152_WPF_WpfViewModel.Models
 {
