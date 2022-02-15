@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_step_151_WPF_WpfComands.Models
+namespace OOP_step_151_WPF_WpfCommands.Models
 {
     public partial class Inventory : INotifyPropertyChanged
     {

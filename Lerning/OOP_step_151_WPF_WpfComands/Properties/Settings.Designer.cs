@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OOP_step_151_WPF_WpfComands.Properties
+namespace OOP_step_151_WPF_WpfCommands.Properties
 {
 
 

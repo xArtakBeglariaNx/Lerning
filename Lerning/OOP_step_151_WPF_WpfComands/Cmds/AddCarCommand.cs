@@ -4,9 +4,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OOP_step_151_WPF_WpfComands.Models;
+using OOP_step_151_WPF_WpfCommands.Models;
 
-namespace OOP_step_151_WPF_WpfComands.Cmds
+namespace OOP_step_151_WPF_WpfCommands.Cmds
 {
     partial class AddCarCommand : CommandBase
     {

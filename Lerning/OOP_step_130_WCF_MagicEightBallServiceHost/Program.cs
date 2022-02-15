@@ -28,7 +28,7 @@ namespace OOP_step_130_WCF_MagicEightBallServiceHost
             Console.WriteLine("\t---- Host ----\n");
             foreach (System.ServiceModel.Description.ServiceEndpoint se in host.Description.Endpoints)
             {
-                Console.WriteLine($"\tAdress: {se.Address}");
+                Console.WriteLine($"\tAddress: {se.Address}");
                 Console.WriteLine($"\tBinding: {se.Binding}");
                 Console.WriteLine($"\tContract: {se.Contract}\n");
             }

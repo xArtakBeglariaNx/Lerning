@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_step_151_WPF_WpfComands.Models
+namespace OOP_step_151_WPF_WpfCommands.Models
 {
     public class EntityBase : INotifyDataErrorInfo
     {

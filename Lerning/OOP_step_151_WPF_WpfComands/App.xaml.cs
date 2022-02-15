@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace OOP_step_151_WPF_WpfComands
+namespace OOP_step_151_WPF_WpfCommands
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

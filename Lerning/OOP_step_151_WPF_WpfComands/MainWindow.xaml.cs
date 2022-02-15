@@ -13,10 +13,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using OOP_step_151_WPF_WpfComands.Cmds;
-using OOP_step_151_WPF_WpfComands.Models;
+using OOP_step_151_WPF_WpfCommands.Cmds;
+using OOP_step_151_WPF_WpfCommands.Models;
 
-namespace OOP_step_151_WPF_WpfComands
+namespace OOP_step_151_WPF_WpfCommands
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -39,12 +39,15 @@ namespace OOP_step_151_WPF_WpfComands
         private ICommand _addCarCommand = null;
         public ICommand AddCarCmd => _addCarCommand ?? (_addCarCommand = new AddCarCommand());
 
-        private RelayCommand<Inventory> _deletCarCommand = null;
-        public RelayCommand<Inventory> DeletCarCmd => _deletCarCommand ?? (_deletCarCommand = new RelayCommand<Inventory>(DeletCar, CanDeletCar));
+        private RelayCommand<Inventory> _deleteCarCommand = null;
+        public RelayCommand<Inventory> DeleteCarCmd => _deleteCarCommand ?? (_deleteCarCommand = new RelayCommand<Inventory>(DeleteCar, CanDeleteCar));
 
-        private bool CanDeletCar(Inventory car) => car != null;
+        private bool CanDeleteCar(Inventory car)
+        {
+            return car != null;
+        }
 
-        private void DeletCar(Inventory car)
+        private void DeleteCar(Inventory car)
         {
             _cars.Remove(car);
         }

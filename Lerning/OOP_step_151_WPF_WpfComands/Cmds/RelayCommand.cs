@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_step_151_WPF_WpfComands.Cmds
+namespace OOP_step_151_WPF_WpfCommands.Cmds
 {
     public class RelayCommand : CommandBase
     {
