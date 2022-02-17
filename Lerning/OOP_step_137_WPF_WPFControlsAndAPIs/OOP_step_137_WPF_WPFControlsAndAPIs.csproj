@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="OOP_step_129_ADO.NET_EF_AutoLotDAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\OOP_step_129_ADO.NET_EF_AutoLotDAL\bin\Debug\OOP_step_129_ADO.NET_EF_AutoLotDAL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
