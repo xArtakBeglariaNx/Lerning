@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOP_step_129_ADO.NET_EF_AutoLotDAL.Models;
 
 namespace OOP_step_153_WPF_WpfMvvm.Cmds
 {
@@ -18,8 +19,8 @@ namespace OOP_step_153_WPF_WpfMvvm.Cmds
         {
             if(parameter is ObservableCollection<Inventory> cars)
             {
-                var maxCount = cars?.Max(x => x.CarId) ?? 0;
-                cars?.Add(new Inventory { CarId = ++maxCount, Color = "Yellow", Make = "VW", PetName = $"Birdie_v.{maxCount}"});
+                var maxCount = cars?.Max(x => x.Id) ?? 0;
+                cars?.Add(new Inventory { Id = ++maxCount, Color = "Yellow", Make = "VW", PetName = $"Birdie_v.{maxCount}"});
             }
         }
     }

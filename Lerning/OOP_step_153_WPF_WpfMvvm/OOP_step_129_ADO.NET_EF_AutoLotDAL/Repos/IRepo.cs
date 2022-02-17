@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.Repos
 {
-    interface IRepo<T>
+    public interface IRepo<T>
     {
         int Add(T entity);
         int AddRange(IList<T> entities);

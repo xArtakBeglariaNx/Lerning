@@ -7,6 +7,7 @@ using System.Data.Entity.Infrastructure.Interception;
 using System.Linq;
 using OOP_step_129_ADO.NET_EF_AutoLotDAL.Models;
 using OOP_step_129_ADO.NET_EF_AutoLotDAL.Interception;
+using OOP_step_129_ADO.NET_EF_AutoLotDAL.Models.Base;
 
 
 namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.EF
@@ -15,8 +16,7 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.EF
     {
         static readonly DatabaseLogger DatabaseLoger =
             new DatabaseLogger("sqllog.txt", true);
-        public AutoLotEntities()
-            : base("name=AutoLotConnection")
+        public AutoLotEntities() : base("name = AutoLotConnection")
         {
             //DbInterception.Add(new ConsoleWriterInterceptor());
             //DatabaseLoger.StartLogging();
@@ -46,7 +46,11 @@ namespace OOP_step_129_ADO.NET_EF_AutoLotDAL.EF
 
         private void OnObjectMaterialized(object sender, ObjectMaterializedEventArgs e)
         {
-
+            var model = (e.Entity as EntityBase);
+            if (model != null)
+            {
+                model.IsChanged = false;
+            }
         }
 
         public virtual DbSet<CreditRisk> CreditRisks { get; set; }
