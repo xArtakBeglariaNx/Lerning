@@ -20,7 +20,9 @@ namespace OOP_step_152_WPF_WpfViewModel.Cmds
         }
 
         public override bool CanExecute(object parameter)
-            => _canExecute == null || _canExecute();
+        {
+            return _canExecute == null || _canExecute();
+        }
 
         public override void Execute(object parameter) { _execute(); }
     }
